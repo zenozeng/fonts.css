@@ -1,18 +1,6 @@
 $.get 'fonts.yml', (fonts) ->
   $.get 'config.yml', (config) ->
-    # parse fonts
-    doc = jsyaml.load fonts
-    fonts = []
-    for cname, font of doc
-      font.cname = cname
-      fonts.push font
-    # parse config
-    config = jsyaml.load config
-    # start
-    families = config.families
-    weights = config.weights
     collections = []
-    weights.unshift undefined
     for family in families
       for weight in weights
         results = fonts.filter (font) -> font.family is family and font.weight is weight

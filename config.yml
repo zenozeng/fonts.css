@@ -1,13 +1,12 @@
 ---
 families:
-  - 黑体
-  - 宋体
-  - 楷体
-  - 仿宋
-  - 明体
+  黑体: hei
+  宋体: song
+  楷体: kai
+  仿宋: fang-song
+  明体: ming
 
 weights:
-  - 细
-  - 中
-  - 粗
-  - 超细
+  细: light
+  中: medium
+  超细: ultra-light

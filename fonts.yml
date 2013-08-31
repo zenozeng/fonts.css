@@ -9,53 +9,63 @@
 # 黑体 (Normal)
 ###########################
 
-冬青黑:
-  name: Hiragino Sans GB
+-
+  name: 冬青黑
+  alias: Hiragino Sans GB
   family: 黑体
   platform: Mac
 
-微软雅黑:
-  name: Microsoft YaHei
+- 
+  name: 微软雅黑
+  alias: Microsoft YaHei
   family: 黑体
   platform: Windows
 
-文泉驿微米黑:
-  name: Wenquanyi Micro Hei
+- 
+  name: 文泉驿微米黑
+  alias: Wenquanyi Micro Hei
   family: 黑体
   platform: Linux
 
-文泉驿等宽微米黑:
-  name: WenQuanYi Micro Hei Mono
+- 
+  name: 文泉驿等宽微米黑
+  alias: WenQuanYi Micro Hei Mono
   family: 黑体
   platform: Linux
 
-华文黑体:
-  name: ST Heiti
+- 
+  name: 华文黑体
+  alias: ST Heiti
   family: 黑体
   platform: Windows
 
-文泉驿正黑:
-  name: WenQuanYi Zen Hei
+- 
+  name: 文泉驿正黑
+  alias: WenQuanYi Zen Hei
   family: 黑体
   platform: Linux
 
-文泉驿等宽正黑:
-  name: WenQuanYi Zen Hei
+- 
+  name: 文泉驿等宽正黑
+  alias: WenQuanYi Zen Hei
   family: 黑体
   platform: Linux
 
-苹果丽中黑:
-  name: Apple LiGothic Medium
+- 
+  name: 苹果丽中黑
+  alias: Apple LiGothic Medium
   family: 黑体
   platform: Mac
 
-中易黑体:
-  name: SimHei
+- 
+  name: 中易黑体
+  alias: SimHei
   family: 黑体
   platform: Windows
 
-文泉驿点阵正黑:
-  name: WenQuanYi Zen Hei Sharp
+-
+  name: 文泉驿点阵正黑
+  alias: WenQuanYi Zen Hei Sharp
   family: 黑体
   platform: Linux
 
@@ -63,20 +73,23 @@
 # 黑体 (细)
 ###########################
   
-华文细黑: 
-  name: STHeiti Light
+-
+  name: 华文细黑
+  alias: STHeiti Light
   family: 黑体
   weight: 细
   platform: Windows
 
-文泉驿微米黑细:
-  name: WenQuanYi Micro Hei Light
+-
+  name: 文泉驿微米黑细
+  alias: WenQuanYi Micro Hei Light
   family: 黑体
   weight: 细
   platform: Linux
   
-文泉驿等宽微米黑细:
-  name: WenQuanYi Micro Hei Mono Light
+-
+  name: 文泉驿等宽微米黑细
+  alias: WenQuanYi Micro Hei Mono Light
   family: 黑体
   weight: 细
   platform: Linux
@@ -85,9 +98,9 @@
 # 黑体（超细）
 ###########################
 
-方正兰亭超细黑:
-  name:
-    - FZLanTingHei\-UL\-GBK
+- 
+  name: 方正兰亭超细黑
+  alias: FZLanTingHei\-UL\-GBK
   family: 黑体
   weight: 超细
   
@@ -96,27 +109,32 @@
 # 宋体 (Normal)
 ###########################
 
-华文宋体:
-  name: STSong
+-
+  name: 华文宋体
+  alias: STSong
   family: 宋体
   platform: Windows
 
-新宋体:
-  name: NSimSun
+-
+  name: 新宋体
+  alias: NSimSun
   family: 宋体
   platform: Windows
 
-中易宋体:
-  name: SimSun
+-
+  name: 中易宋体
+  alias: SimSun
   family: 宋体
   platform: Windows
 
-全字库正宋体:
-  name: TW\-Sung
+-
+  name: 全字库正宋体
+  alias: TW\-Sung
   family: 宋体
 
-文泉驿点阵宋:
-  name: WenQuanYi Bitmap Song
+- 
+  name: 文泉驿点阵宋
+  alias: WenQuanYi Bitmap Song
   family: 宋体
   platform: Linux
   
@@ -125,8 +143,9 @@
 # 宋体 (中)
 ###########################
 
-华文中宋:
-  name: STZhongsong
+-
+  name: 华文中宋
+  alias: STZhongsong
   family: 宋体
   weight: 中
   platform: Windows
@@ -135,17 +154,20 @@
 # 楷体
 ###########################
 
-华文楷体:
-  name: STKaiti
+-
+  name: 华文楷体
+  alias: STKaiti
   family: 楷体
   platform: Windows
 
-全字库正楷体:
-  name: TW\-Kai
+-
+  name: 全字库正楷体
+  alias: TW\-Kai
   family: 楷体
 
-AR PL UKai:
-  name:
+-
+  name: AR PL UKai
+  alias:
     - AR PL UKai CN
     - AR PL UKai HK
     - AR PL UKai TW
@@ -157,13 +179,15 @@ AR PL UKai:
 # 仿宋
 ###########################
 
-华文仿宋:
-  name: STFangsong
+-
+  name: 华文仿宋
+  alias: STFangsong
   family: 仿宋
   platform: Windows
   
-仿宋:
-  name: FangSong
+-
+  name: 仿宋
+  alias: FangSong
   family: 仿宋
   platform: Windows
 
@@ -171,8 +195,9 @@ AR PL UKai:
 # 明体
 ###########################
 
-AR PL UMing:
-  name: 
+- 
+  name: AR PL UMing
+  alias: 
     - AR PL UMing CN
     - AR PL UMing HK
     - AR PL UMing TW
