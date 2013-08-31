@@ -1,0 +1,150 @@
+---
+###########################
+# 苹果
+###########################
+
+冬青黑:
+  name: Hiragino Sans GB
+  family: 黑体
+
+苹果丽中黑:
+  name: Apple LiGothic Medium
+  family: 黑体
+
+###########################
+# 华文
+###########################
+
+华文黑体:
+  name: ST Heiti
+  family: 黑体
+
+华文细黑: 
+  name: STHeiti Light
+  family: 黑体
+  weight: 细
+
+华文仿宋:
+  name: STFangsong
+  family: 仿宋
+
+华文中宋:
+  name: STZhongsong
+  family: 宋体
+  weight: 中
+
+华文楷体:
+  name: STKaiti
+  family: 楷体
+
+华文宋体:
+  name: STSong
+  family: 宋体
+
+###########################
+# 微软
+###########################
+
+微软雅黑:
+  name: Microsoft YaHei
+  family: 黑体
+
+仿宋:
+  name: FangSong
+  family: 仿宋
+  
+###########################
+# 中易字体
+###########################
+
+中易黑体:
+  name: SimHei
+  family: 黑体
+  
+中易宋体:
+  name: SimSun
+  family: 宋体
+
+新宋体:
+  name: NSimSun
+  family: 宋体
+
+###########################
+# 文泉驿
+###########################
+
+文泉驿微米黑:
+  name: Wenquanyi Micro Hei
+  family: 黑体
+
+文泉驿微米黑细:
+  name: WenQuanYi Micro Hei Light
+  family: 黑体
+  weight: 细
+  
+文泉驿等宽微米黑:
+  name: WenQuanYi Micro Hei Mono
+  family: 黑体
+  
+文泉驿等宽微米黑细:
+  name: WenQuanYi Micro Hei Mono Light
+  family: 黑体
+  weight: 细
+  
+文泉驿正黑:
+  name: WenQuanYi Zen Hei
+  family: 黑体
+  
+文泉驿等宽正黑:
+  name: WenQuanYi Zen Hei
+  family: 黑体
+  
+文泉驿点阵宋:
+  name: WenQuanYi Bitmap Song
+  family: 宋体
+  
+文泉驿点阵正黑:
+  name: WenQuanYi Zen Hei Sharp
+  family: 黑体
+
+###########################
+# 文鼎
+###########################
+
+AR PL UMing:
+  name: 
+    - AR PL UMing CN
+    - AR PL UMing HK
+    - AR PL UMing TW
+    - AR PL UMing TW MBE
+  family: 明体
+
+AR PL UKai:
+  name:
+    - AR PL UKai CN
+    - AR PL UKai HK
+    - AR PL UKai TW
+    - AR PL UKai TW MBE
+  family: 楷体
+  
+###########################
+# 全字库
+###########################
+
+全字库楷体:
+  name: TW\-Kai
+  family: 楷体
+
+全字库宋体:
+  name: TW\-Sung
+  family: 宋体
+
+###########################
+# 方正字体
+###########################
+
+方正兰亭超细黑:
+  name:
+    - FZLanTingHei\-UL\-GBK
+  family: 黑体
+  weight: 超细
