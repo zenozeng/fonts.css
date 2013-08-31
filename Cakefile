@@ -78,6 +78,7 @@ task "build", ->
   <link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\" />\n
 </head>\n
 <body class=\"font-hei-normal\">\n
+  <a href=\"https://github.com/zenozeng/fonts.css\"><img style=\"position: absolute; top: 0; right: 0; border: 0;\" src=\"https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png\" alt=\"Fork me on GitHub\"></a>\n
   <header>Fonts.css -- 跨平台中文字体解决方案</header>\n
   <article>#{collections.join('')}</article>\n
 </body>"
