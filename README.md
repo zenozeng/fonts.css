@@ -1,7 +1,11 @@
-# Fonts.yml
+# Demo
 
-中文字体名和CSS 字体名对应关系的yaml
+http://zenozeng.github.io/fonts.css/
 
-# Classes.yml
+# Contribute
 
-中文候选字体的yaml
+update fonts.yml
+
+# License
+
+MIT

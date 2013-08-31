@@ -1,6 +1,12 @@
 ---
+# Fonts.yml
+# Copyright (C) 2013 Zeno Zeng 
+# Lincensed under the MIT License
+
+# 字体的排序会按照在这个文件中的顺序排列
+
 ###########################
-# 苹果
+# 黑体 (Normal)
 ###########################
 
 冬青黑:
@@ -8,72 +14,90 @@
   family: 黑体
   platform: Mac
 
-苹果丽中黑:
-  name: Apple LiGothic Medium
+微软雅黑:
+  name: Microsoft YaHei
   family: 黑体
-  platform: Mac
+  platform: Windows
 
-###########################
-# 华文
-###########################
+文泉驿微米黑:
+  name: Wenquanyi Micro Hei
+  family: 黑体
+  platform: Linux
+
+文泉驿等宽微米黑:
+  name: WenQuanYi Micro Hei Mono
+  family: 黑体
+  platform: Linux
 
 华文黑体:
   name: ST Heiti
   family: 黑体
   platform: Windows
 
+文泉驿正黑:
+  name: WenQuanYi Zen Hei
+  family: 黑体
+  platform: Linux
+
+文泉驿等宽正黑:
+  name: WenQuanYi Zen Hei
+  family: 黑体
+  platform: Linux
+
+苹果丽中黑:
+  name: Apple LiGothic Medium
+  family: 黑体
+  platform: Mac
+
+中易黑体:
+  name: SimHei
+  family: 黑体
+  platform: Windows
+
+文泉驿点阵正黑:
+  name: WenQuanYi Zen Hei Sharp
+  family: 黑体
+  platform: Linux
+
+###########################
+# 黑体 (细)
+###########################
+  
 华文细黑: 
   name: STHeiti Light
   family: 黑体
   weight: 细
   platform: Windows
 
-华文仿宋:
-  name: STFangsong
-  family: 仿宋
-  platform: Windows
+文泉驿微米黑细:
+  name: WenQuanYi Micro Hei Light
+  family: 黑体
+  weight: 细
+  platform: Linux
+  
+文泉驿等宽微米黑细:
+  name: WenQuanYi Micro Hei Mono Light
+  family: 黑体
+  weight: 细
+  platform: Linux
 
-华文中宋:
-  name: STZhongsong
-  family: 宋体
-  weight: 中
-  platform: Windows
+###########################
+# 黑体（超细）
+###########################
 
-华文楷体:
-  name: STKaiti
-  family: 楷体
-  platform: Windows
+方正兰亭超细黑:
+  name:
+    - FZLanTingHei\-UL\-GBK
+  family: 黑体
+  weight: 超细
+  
+  
+###########################
+# 宋体 (Normal)
+###########################
 
 华文宋体:
   name: STSong
-  family: 宋体
-  platform: Windows
-
-###########################
-# 微软
-###########################
-
-微软雅黑:
-  name: Microsoft YaHei
-  family: 黑体
-  platform: Windows
-
-仿宋:
-  name: FangSong
-  family: 仿宋
-  platform: Windows
-  
-###########################
-# 中易字体
-###########################
-
-中易黑体:
-  name: SimHei
-  family: 黑体
-  platform: Windows
-  
-中易宋体:
-  name: SimSun
   family: 宋体
   platform: Windows
 
@@ -82,54 +106,69 @@
   family: 宋体
   platform: Windows
 
-###########################
-# 文泉驿
-###########################
+中易宋体:
+  name: SimSun
+  family: 宋体
+  platform: Windows
 
-文泉驿微米黑:
-  name: Wenquanyi Micro Hei
-  family: 黑体
-  platform: Linux
+全字库正宋体:
+  name: TW\-Sung
+  family: 宋体
 
-文泉驿微米黑细:
-  name: WenQuanYi Micro Hei Light
-  family: 黑体
-  weight: 细
-  platform: Linux
-  
-文泉驿等宽微米黑:
-  name: WenQuanYi Micro Hei Mono
-  family: 黑体
-  platform: Linux
-  
-文泉驿等宽微米黑细:
-  name: WenQuanYi Micro Hei Mono Light
-  family: 黑体
-  weight: 细
-  platform: Linux
-  
-文泉驿正黑:
-  name: WenQuanYi Zen Hei
-  family: 黑体
-  platform: Linux
-  
-文泉驿等宽正黑:
-  name: WenQuanYi Zen Hei
-  family: 黑体
-  platform: Linux
-  
 文泉驿点阵宋:
   name: WenQuanYi Bitmap Song
   family: 宋体
   platform: Linux
   
-文泉驿点阵正黑:
-  name: WenQuanYi Zen Hei Sharp
-  family: 黑体
+
+###########################
+# 宋体 (中)
+###########################
+
+华文中宋:
+  name: STZhongsong
+  family: 宋体
+  weight: 中
+  platform: Windows
+
+###########################
+# 楷体
+###########################
+
+华文楷体:
+  name: STKaiti
+  family: 楷体
+  platform: Windows
+
+全字库正楷体:
+  name: TW\-Kai
+  family: 楷体
+
+AR PL UKai:
+  name:
+    - AR PL UKai CN
+    - AR PL UKai HK
+    - AR PL UKai TW
+    - AR PL UKai TW MBE
+  family: 楷体
   platform: Linux
 
 ###########################
-# 文鼎
+# 仿宋
+###########################
+
+华文仿宋:
+  name: STFangsong
+  family: 仿宋
+  platform: Windows
+  
+仿宋:
+  name: FangSong
+  family: 仿宋
+  platform: Windows
+
+###########################
+# 明体
 ###########################
 
 AR PL UMing:
@@ -141,33 +180,4 @@ AR PL UMing:
   family: 明体
   platform: Linux
 
-AR PL UKai:
-  name:
-    - AR PL UKai CN
-    - AR PL UKai HK
-    - AR PL UKai TW
-    - AR PL UKai TW MBE
-  family: 楷体
-  platform: Linux
-  
-###########################
-# 全字库
-###########################
 
-全字库正楷体:
-  name: TW\-Kai
-  family: 楷体
-
-全字库正宋体:
-  name: TW\-Sung
-  family: 宋体
-
-###########################
-# 方正字体
-###########################
-
-方正兰亭超细黑:
-  name:
-    - FZLanTingHei\-UL\-GBK
-  family: 黑体
-  weight: 超细
