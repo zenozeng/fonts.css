@@ -41,10 +41,10 @@ $.get 'fonts.yml', (fonts) ->
         <div class=\"text\" style=\"font-family: #{styles.join(', ')}\">
           <h2>#{collection.text}</h2>
           <ul>
-            <li class=\"size18\">我可以吃了玻璃而不伤手。</li>
-            <li class=\"size16\">我可以吃了玻璃而不伤手。</li>
-            <li class=\"size14\">我可以吃了玻璃而不伤手。</li>
-            <li class=\"size12\">我可以吃了玻璃而不伤手。</li>
+            <li class=\"size18\">故天将降大任于是人也必先苦其心智劳其筋骨饿其体肤空乏其身行弗乱其所为所以动心忍性曾益其所不能。<li>
+            <li class=\"size16\">故天将降大任于是人也必先苦其心智劳其筋骨饿其体肤空乏其身行弗乱其所为所以动心忍性曾益其所不能。<li>
+            <li class=\"size14\">故天将降大任于是人也必先苦其心智劳其筋骨饿其体肤空乏其身行弗乱其所为所以动心忍性曾益其所不能。<li>
+            <li class=\"size12\">故天将降大任于是人也必先苦其心智劳其筋骨饿其体肤空乏其身行弗乱其所为所以动心忍性曾益其所不能。<li>
           </ul>
         </div>
         <div class=\"name\">
