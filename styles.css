@@ -1,6 +1,6 @@
 h2,ul,li{padding:0;margin:0}
 ul,li{list-style:none}
-body{font-family:"Hiragino Sans GB","Apple LiGothic Medium","ST Heiti","Microsoft YaHei","SimHei","Wenquanyi Micro Hei","WenQuanYi Micro Hei Mono","WenQuanYi Zen Hei","WenQuanYi Zen Hei","WenQuanYi Zen Hei Sharp";background:#eee;color:#777;font-size:12px}
+body{background:#eee;color:#777;font-size:12px}
 header{font-size:36px;padding-top:12px;line-height:72px;text-align:center}
 .collection{background:#fff;line-height:2em;padding:1em;margin:2em}.collection .tags{float:right}.collection .tags li{background:#f2f2f2;float:right;padding:.5em;margin:.5em;border-radius:3px;color:#aaa}
 .collection .text{color:#555;padding-bottom:12px;border-bottom:1px solid #eee;margin-bottom:12px}.collection .text h2{font-weight:normal;font-size:24px;line-height:48px}
@@ -9,6 +9,5 @@ header{font-size:36px;padding-top:12px;line-height:72px;text-align:center}
 .collection .text .size16{font-size:16px}
 .collection .text .size14{font-size:14px}
 .collection .text .size12{font-size:12px}
-.collection .name{line-height:24px}
 .collection .css{color:#999}
 .collection .class{border-bottom:1px solid #eee;margin-bottom:12px;padding-bottom:12px}

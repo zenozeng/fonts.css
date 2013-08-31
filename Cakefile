@@ -39,10 +39,18 @@ task "build", ->
         collections.push collection
     # filter empty collections
     collections = collections.filter (collection) -> collection.fonts.length > 0
+
     # generate fonts.css
     console.log "Generating fonts.css"
+    header = "/*!\n
+ *  Fonts.css -- Cross-platform Chinese fonts solution\n
+ * \n
+ *  Copyright (c) 2013 Zeno Zeng\n
+ *  Released under the MIT license\n
+ */\n"
     css = collections.map (collection) -> ".#{collection.class} {#{collection.css}}"
-    fs.writeFile 'fonts.css', css.join("\n"), (err) -> throw err if err
+    fs.writeFile 'fonts.css', header+css.join("\n"), (err) -> throw err if err
+
     # generate index.html
     console.log "Generating index.html"
     collections = collections.map (collection) ->
@@ -69,7 +77,7 @@ task "build", ->
   <link rel=\"stylesheet\" type=\"text/css\" href=\"fonts.css\" />\n
   <link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\" />\n
 </head>\n
-<body>\n
+<body class=\"font-hei-normal\">\n
   <header>Fonts.css -- 跨平台中文字体解决方案</header>\n
   <article>#{collections.join('')}</article>\n
 </body>"

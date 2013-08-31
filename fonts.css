@@ -1,3 +1,9 @@
+/*!
+ *  Fonts.css -- Cross-platform Chinese fonts solution
+ * 
+ *  Copyright (c) 2013 Zeno Zeng
+ *  Released under the MIT license
+ */
 .font-hei-normal {font-family: "Hiragino Sans GB", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Micro Hei Mono", "ST Heiti", "WenQuanYi Zen Hei", "WenQuanYi Zen Hei", "Apple LiGothic Medium", "SimHei", "WenQuanYi Zen Hei Sharp";}
 .font-hei-light {font-family: "STHeiti Light", "WenQuanYi Micro Hei Light", "WenQuanYi Micro Hei Mono Light";}
 .font-hei-ultra-light {font-family: "FZLanTingHei\-UL\-GBK";}
