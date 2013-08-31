@@ -10,4 +10,5 @@ header{font-size:36px;padding-top:12px;line-height:72px;text-align:center}
 .collection .text .size14{font-size:14px}
 .collection .text .size12{font-size:12px}
 .collection .name{line-height:24px}
-.collection .css{margin:.5em 0;background:#eee;color:#999;padding:.5em}
+.collection .css{color:#999}
+.collection .class{border-bottom:1px solid #eee;margin-bottom:12px;padding-bottom:12px}

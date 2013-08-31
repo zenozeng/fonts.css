@@ -59,8 +59,8 @@ task "build", ->
             <li class=\"size12\">故天将降大任于是人也必先苦其心智劳其筋骨饿其体肤空乏其身行弗乱其所为所以动心忍性曾益其所不能。<li>\n
           </ul>\n
         </div>\n
-        <div class=\"name\">#{collection.names.join('，')}</div>\n
-        <div class=\"css\">Class: #{collection.class}</div>\n
+        <div class=\"class\">.#{collection.class}</div>\n
+        <div class=\"css\">#{collection.names.join('，')}</div>\n
         <div class=\"css\">#{_.escape(collection.css)}</div>\n
       </div>\n"
     html = "<!doctype HTML>\n
