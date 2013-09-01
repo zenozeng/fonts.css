@@ -2,12 +2,24 @@ h2,ul,li{padding:0;margin:0}
 ul,li{list-style:none}
 body{background:#eee;color:#777;font-size:12px}
 header{font-size:36px;padding-top:12px;line-height:72px;text-align:center}
-.collection{background:#fff;line-height:2em;padding:1em;margin:2em}.collection .tags{float:right}.collection .tags li{background:#f2f2f2;float:right;padding:.5em;margin:.5em;border-radius:3px;color:#aaa}
-.collection .text{color:#555;padding-bottom:12px;border-bottom:1px solid #eee;margin-bottom:12px}.collection .text h2{font-weight:normal;font-size:24px;line-height:48px}
-.collection .text li{line-height:36px}
-.collection .text .size18{font-size:18px}
-.collection .text .size16{font-size:16px}
-.collection .text .size14{font-size:14px}
-.collection .text .size12{font-size:12px}
-.collection .css{color:#999}
-.collection .class{border-bottom:1px solid #eee;margin-bottom:12px;padding-bottom:12px}
+.collection{background:#fff;line-height:2em;padding:1em;margin:2em}
+.tags{float:right}
+.tags li{background:#f2f2f2;float:right;padding:.5em;margin:2px .5em;border-radius:3px;color:#aaa}
+.text{
+    color:#000;
+    padding-bottom:12px;
+    border-bottom:1px solid #eee;
+    border-top:1px solid #eee;
+    margin-bottom:12px;
+    padding-top: 12px;
+}
+h2{font-weight:normal;font-size:24px;line-height:48px;color:#ccc;}
+h2 span {color:#cfcfcf;font-size:14px;}
+.text li{line-height:36px}
+.text .size24{font-size:24px}
+.text .size18{font-size:18px}
+.text .size16{font-size:16px}
+.text .size14{font-size:14px}
+.text .size12{font-size:12px}
+.css{color:#999}
+.class{border-bottom:1px solid #eee;margin-bottom:12px;padding-bottom:12px}

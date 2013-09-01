@@ -3,17 +3,22 @@ yaml = require 'js-yaml'
 _ = require 'underscore'
 
 families =
-  黑体: "hei"
   宋体: "song"
+  黑体: "hei"
   楷体: "kai"
   仿宋: "fang-song"
   明体: "ming"
 
-weights =
-  Normal: "normal"
-  细: "light"
-  中: "medium"
-  超细: "ultra-light"
+weights = 
+  "Regular": "regular"
+  "Ultra Light": "ultra-light"
+  "Extra Light": "extra-light"
+  "Light": "light"
+  "Medium": "medium"
+  "Bold": "bold"
+  "Extra Bold": "extra-bold"
+  "Ultra Bold": "ultra-bold"
+  "Heavy": "heavy"
 
 task "build", ->
   fs.readFile 'fonts.yml', {encoding: 'UTF-8'}, (err, data) ->
@@ -21,7 +26,7 @@ task "build", ->
     # Parse YAML
     fonts = yaml.load data
     # fill property with defaults
-    fonts = fonts.map (elem) -> _.defaults elem, {weight: "Normal"}
+    fonts = fonts.map (elem) -> _.defaults elem, {weight: "Regular"}
     # Collect fonts
     collections = []
     for family in _.keys(families)
@@ -32,7 +37,7 @@ task "build", ->
         collection =
           fonts: alias
           names: results.map (elem) -> elem.name
-          header: if weight? then "#{family}（#{weight}）" else family
+          header: if weight? then "#{family} <span>#{weight}</span>" else family
           class: "font-#{families[family]}-#{weights[weight]}"
           css: "font-family: \"#{alias.join('\", \"')}\";"
           platform: _.compact(_.uniq(_.flatten(platform)))
@@ -58,9 +63,10 @@ task "build", ->
 
       "\n     <div class=\"collection\">\n
         <div class=\"tags\">#{platform.join('')}</div>\n
+        <h2 class=\"font-hei-regular\">#{collection.header}</h2>\n
         <div class=\"text #{collection.class}\">\n
-          <h2>#{collection.header}</h2>\n
           <ul>\n
+            <li class=\"size24\">故天将降大任于是人也必先苦其心智劳其筋骨饿其体肤空乏其身行弗乱其所为所以动心忍性曾益其所不能。<li>\n
             <li class=\"size18\">故天将降大任于是人也必先苦其心智劳其筋骨饿其体肤空乏其身行弗乱其所为所以动心忍性曾益其所不能。<li>\n
             <li class=\"size16\">故天将降大任于是人也必先苦其心智劳其筋骨饿其体肤空乏其身行弗乱其所为所以动心忍性曾益其所不能。<li>\n
             <li class=\"size14\">故天将降大任于是人也必先苦其心智劳其筋骨饿其体肤空乏其身行弗乱其所为所以动心忍性曾益其所不能。<li>\n
@@ -77,7 +83,7 @@ task "build", ->
   <link rel=\"stylesheet\" type=\"text/css\" href=\"fonts.css\" />\n
   <link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\" />\n
 </head>\n
-<body class=\"font-hei-normal\">\n
+<body class=\"font-hei-regular\">\n
   <a href=\"https://github.com/zenozeng/fonts.css\"><img style=\"position: absolute; top: 0; right: 0; border: 0;\" src=\"https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png\" alt=\"Fork me on GitHub\"></a>\n
   <header>Fonts.css -- 跨平台中文字体解决方案</header>\n
   <article>#{collections.join('')}</article>\n

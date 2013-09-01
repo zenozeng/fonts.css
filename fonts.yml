@@ -6,7 +6,7 @@
 # 字体的排序会按照在这个文件中的顺序排列
 
 ###########################
-# 黑体 (Normal)
+# 黑体 (regular)
 ###########################
 
 -
@@ -81,7 +81,7 @@
     - STHeiti Light
     - STXihei
   family: 黑体
-  weight: 细
+  weight: light
   platform:
     - Office
     - Mac
@@ -90,14 +90,14 @@
   name: 文泉驿微米黑细
   alias: WenQuanYi Micro Hei Light
   family: 黑体
-  weight: 细
+  weight: light
   platform: Linux
   
 -
   name: 文泉驿等宽微米黑细
   alias: WenQuanYi Micro Hei Mono Light
   family: 黑体
-  weight: 细
+  weight: light
   platform: Linux
 
 ###########################
@@ -108,11 +108,12 @@
   name: 方正兰亭超细黑
   alias: FZLanTingHei\-UL\-GBK
   family: 黑体
-  weight: 超细
+  weight: Ultra Light
+  platform: 方正
   
   
 ###########################
-# 宋体 (Normal)
+# 宋体 (Regular)
 ###########################
 
 -
@@ -154,7 +155,7 @@
   name: 苹果丽细宋
   alias: Apple LiSung Light
   family: 宋体
-  weight: 细
+  weight: light
   platform: Mac
 
 ###########################
@@ -165,7 +166,7 @@
   name: 华文中宋
   alias: STZhongsong
   family: 宋体
-  weight: 中
+  weight: Medium
   platform:
     - Windows
     - Mac
