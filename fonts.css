@@ -4,10 +4,9 @@
  *  Copyright (c) 2013 Zeno Zeng
  *  Released under the MIT license
  */
-.font-song-regular {font-family: "STSong", "NSimSun", "SimSun", "TW\-Sung", "WenQuanYi Bitmap Song";}
+.font-hei-regular {font-family: "Hiragino Sans GB", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Micro Hei Mono", "WenQuanYi Zen Hei", "WenQuanYi Zen Hei", "Apple LiGothic Medium", "SimHei", "ST Heiti", "WenQuanYi Zen Hei Sharp";}
+.font-kai-regular {font-family: "TW\-Kai", "AR PL UKai CN", "AR PL UKai HK", "AR PL UKai TW", "AR PL UKai TW MBE", "KaiTi", "KaiTi_GB2312", "STKaiti";}
+.font-song-regular {font-family: "NSimSun", "SimSun", "STSong", "TW\-Sung", "WenQuanYi Bitmap Song";}
 .font-song-medium {font-family: "STZhongsong";}
-.font-hei-regular {font-family: "Hiragino Sans GB", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Micro Hei Mono", "ST Heiti", "WenQuanYi Zen Hei", "WenQuanYi Zen Hei", "Apple LiGothic Medium", "SimHei", "WenQuanYi Zen Hei Sharp";}
-.font-hei-ultra-light {font-family: "FZLanTingHei\-UL\-GBK";}
-.font-kai-regular {font-family: "STKaiti", "TW\-Kai", "AR PL UKai CN", "AR PL UKai HK", "AR PL UKai TW", "AR PL UKai TW MBE", "KaiTi", "KaiTi_GB2312";}
-.font-fang-song-regular {font-family: "STFangsong", "FangSong", "FangSong_GB2312";}
+.font-fang-song-regular {font-family: "FangSong", "FangSong_GB2312", "STFangsong";}
 .font-ming-regular {font-family: "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", "PMingLiU", "MingLiU";}

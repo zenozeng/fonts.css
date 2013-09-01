@@ -4,7 +4,9 @@ body{background:#eee;color:#777;font-size:12px}
 header{font-size:36px;padding-top:12px;line-height:72px;text-align:center}
 .collection{background:#fff;line-height:2em;padding:1em;margin:2em}
 .tags{float:right}
-.tags li{background:#f2f2f2;float:right;padding:.5em;margin:2px .5em;border-radius:3px;color:#aaa}
+.tags li{background:#f2f2f2;float:right;line-height: 36px;padding: 0 .5em;margin:2px .5em;border-radius:3px;color:#aaa}
+.tags li.warning {background: #FF6A00;}
+.tags li.warning a {color: #fff;text-decoration: none;}
 .text{
     color:#000;
     padding-bottom:12px;
@@ -23,3 +25,8 @@ h2 span {color:#cfcfcf;font-size:14px;}
 .text .size12{font-size:12px}
 .css{color:#999}
 .class{border-bottom:1px solid #eee;margin-bottom:12px;padding-bottom:12px}
+.notes {
+    margin-top: 12px;
+    border-top: 1px solid #eee;
+    padding-top: 12px;
+}

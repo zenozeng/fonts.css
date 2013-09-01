@@ -9,7 +9,7 @@
 # 黑体 (regular)
 ###########################
 
--
+- 
   name: 冬青黑
   alias: Hiragino Sans GB
   family: 黑体
@@ -32,14 +32,6 @@
   alias: WenQuanYi Micro Hei Mono
   family: 黑体
   platform: Linux
-
-- 
-  name: 华文黑体
-  alias: ST Heiti
-  family: 黑体
-  platform:
-    - Windows
-    - Mac
 
 - 
   name: 文泉驿正黑
@@ -65,6 +57,15 @@
   family: 黑体
   platform: Windows
 
+- 
+  name: 华文黑体
+  alias: ST Heiti
+  family: 黑体
+  platform:
+    - Windows
+    - Mac
+  note: 苹果提供了华文黑体作为屏幕显示，但是注意微软 Office 的授权协议不允许将其使用在 Office 之外，这样可能会造成用户在无意识中构成侵权。所以这里把它排在中易黑体的后面，避免用户无意识间侵权。
+
 -
   name: 文泉驿点阵正黑
   alias: WenQuanYi Zen Hei Sharp
@@ -75,17 +76,6 @@
 # 黑体 (细)
 ###########################
   
--
-  name: 华文细黑
-  alias:
-    - STHeiti Light
-    - STXihei
-  family: 黑体
-  weight: light
-  platform:
-    - Office
-    - Mac
-
 -
   name: 文泉驿微米黑细
   alias: WenQuanYi Micro Hei Light
@@ -100,43 +90,43 @@
   weight: light
   platform: Linux
 
-###########################
-# 黑体（超细）
-###########################
-
-- 
-  name: 方正兰亭超细黑
-  alias: FZLanTingHei\-UL\-GBK
+-
+  name: 华文细黑
+  alias:
+    - STHeiti Light
+    - STXihei
   family: 黑体
-  weight: Ultra Light
-  platform: 方正
-  
-  
+  weight: light
+  platform:
+    - MS Office*
+    - Mac
+
 ###########################
 # 宋体 (Regular)
 ###########################
 
--
-  name: 华文宋体
-  alias: STSong
-  family: 宋体
-  platform:
-    - Office
-    - Mac
-
--
+- 
   name: 新宋体
   alias: NSimSun
   family: 宋体
   platform: Windows
 
--
+- 
   name: 中易宋体
   alias: SimSun
   family: 宋体
   platform: Windows
 
--
+- 
+  name: 华文宋体
+  alias: STSong
+  family: 宋体
+  platform:
+    - MS Office*
+    - Mac
+  note: 苹果提供了华文宋体作为屏幕显示，但是注意微软 Office 的授权协议不允许将其使用在 Office 之外，这样可能会造成用户在无意识中构成侵权。所以这里把华文宋体排在中易宋体的后面，避免用户无意识间侵权。
+    
+- 
   name: 全字库正宋体
   alias: TW\-Sung
   family: 宋体
@@ -168,25 +158,19 @@
   family: 宋体
   weight: Medium
   platform:
-    - Windows
+    - MS Office*
     - Mac
-
+  note: 苹果提供了华文中宋作为屏幕显示，但是注意微软 Office 的授权协议不允许将其使用在 Office 之外，这样可能会造成用户在无意识中构成侵权。使用时请自行注意。
+  
 ###########################
 # 楷体
 ###########################
 
 -
-  name: 华文楷体
-  alias: STKaiti
-  family: 楷体
-  platform:
-    - Office
-    - Mac
-
--
   name: 全字库正楷体
   alias: TW\-Kai
   family: 楷体
+  platform: 全字库
 
 -
   name: AR PL UKai
@@ -206,19 +190,20 @@
   family: 楷体
   platform: Windows
 
+-
+  name: 华文楷体
+  alias: STKaiti
+  family: 楷体
+  platform:
+    - MS Office*
+    - Mac
+  note: 苹果提供了华文楷体作为屏幕显示，但是注意微软 Office 的授权协议不允许将其使用在 Office 之外，这样可能会造成用户在无意识中构成侵权。所以这里把它排在 Windows 自带楷体的后面，避免用户无意识间侵权。
+
 ###########################
 # 仿宋
 ###########################
 
--
-  name: 华文仿宋
-  alias: STFangsong
-  family: 仿宋
-  platform:
-    - Office
-    - Mac
-  
--
+- 
   name: 仿宋
   alias:
     - FangSong
@@ -228,6 +213,15 @@
     - Windows
     - Mac
 
+- 
+  name: 华文仿宋
+  alias: STFangsong
+  family: 仿宋
+  platform:
+    - MS Office*
+    - Mac
+  note: 苹果提供了华文仿宋作为屏幕显示，但是注意微软 Office 的授权协议不允许将其使用在 Office 之外，这样可能会造成用户在无意识中构成侵权。所以这里把它排在 Windows 自带仿宋的后面，避免用户无意识间侵权。    
+  
 ###########################
 # 明体
 ###########################
@@ -246,10 +240,14 @@
   name: 新细明体
   alias: PMingLiU
   family: 明体
-  platform: Windows
+  platform:
+    - Windows
+    - Mac
 
 -
   name: 细明体
   alias: MingLiU
   family: 明体
-  platform: Windows
+  platform:
+    - Windows
+    - Mac
