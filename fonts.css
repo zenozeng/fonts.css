@@ -8,7 +8,8 @@
 .font-hei-light {font-family: "STHeiti Light", "WenQuanYi Micro Hei Light", "WenQuanYi Micro Hei Mono Light";}
 .font-hei-ultra-light {font-family: "FZLanTingHei\-UL\-GBK";}
 .font-song-normal {font-family: "STSong", "NSimSun", "SimSun", "TW\-Sung", "WenQuanYi Bitmap Song";}
+.font-song-light {font-family: "Apple LiSung Light";}
 .font-song-medium {font-family: "STZhongsong";}
-.font-kai-normal {font-family: "STKaiti", "TW\-Kai", "AR PL UKai CN", "AR PL UKai HK", "AR PL UKai TW", "AR PL UKai TW MBE";}
-.font-fang-song-normal {font-family: "STFangsong", "FangSong";}
-.font-ming-normal {font-family: "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE";}
+.font-kai-normal {font-family: "STKaiti", "TW\-Kai", "AR PL UKai CN", "AR PL UKai HK", "AR PL UKai TW", "AR PL UKai TW MBE", "KaiTi", "KaiTi_GB2312";}
+.font-fang-song-normal {font-family: "STFangsong", "FangSong", "FangSong_GB2312";}
+.font-ming-normal {font-family: "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", "PMingLiU", "MingLiU";}

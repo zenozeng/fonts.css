@@ -37,7 +37,9 @@
   name: 华文黑体
   alias: ST Heiti
   family: 黑体
-  platform: Windows
+  platform:
+    - Windows
+    - Mac
 
 - 
   name: 文泉驿正黑
@@ -78,7 +80,9 @@
   alias: STHeiti Light
   family: 黑体
   weight: 细
-  platform: Windows
+  platform:
+    - Office
+    - Mac
 
 -
   name: 文泉驿微米黑细
@@ -113,7 +117,9 @@
   name: 华文宋体
   alias: STSong
   family: 宋体
-  platform: Windows
+  platform:
+    - Office
+    - Mac
 
 -
   name: 新宋体
@@ -138,6 +144,16 @@
   family: 宋体
   platform: Linux
   
+###########################
+# 宋体 (细)
+###########################
+
+-
+  name: 苹果丽细宋
+  alias: Apple LiSung Light
+  family: 宋体
+  weight: 细
+  platform: Mac
 
 ###########################
 # 宋体 (中)
@@ -148,7 +164,9 @@
   alias: STZhongsong
   family: 宋体
   weight: 中
-  platform: Windows
+  platform:
+    - Windows
+    - Mac
 
 ###########################
 # 楷体
@@ -158,7 +176,9 @@
   name: 华文楷体
   alias: STKaiti
   family: 楷体
-  platform: Windows
+  platform:
+    - Office
+    - Mac
 
 -
   name: 全字库正楷体
@@ -175,6 +195,14 @@
   family: 楷体
   platform: Linux
 
+-
+  name: 楷体
+  alias:
+    - KaiTi
+    - KaiTi_GB2312
+  family: 楷体
+  platform: Windows
+
 ###########################
 # 仿宋
 ###########################
@@ -183,13 +211,19 @@
   name: 华文仿宋
   alias: STFangsong
   family: 仿宋
-  platform: Windows
+  platform:
+    - Office
+    - Mac
   
 -
   name: 仿宋
-  alias: FangSong
+  alias:
+    - FangSong
+    - FangSong_GB2312
   family: 仿宋
-  platform: Windows
+  platform:
+    - Windows
+    - Mac
 
 ###########################
 # 明体
@@ -205,4 +239,14 @@
   family: 明体
   platform: Linux
 
+-
+  name: 新细明体
+  alias: PMingLiU
+  family: 明体
+  platform: Windows
 
+-
+  name: 细明体
+  alias: MingLiU
+  family: 明体
+  platform: Windows
