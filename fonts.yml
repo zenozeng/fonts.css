@@ -77,7 +77,9 @@
   
 -
   name: 华文细黑
-  alias: STHeiti Light
+  alias:
+    - STHeiti Light
+    - STXihei
   family: 黑体
   weight: 细
   platform:
