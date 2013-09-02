@@ -125,11 +125,18 @@
     - MS Office*
     - Mac
   note: 苹果提供了华文宋体作为屏幕显示，但是注意微软 Office 的授权协议不允许将其使用在 Office 之外，这样可能会造成用户在无意识中构成侵权。所以这里把华文宋体排在中易宋体的后面，避免用户无意识间侵权。
+
+-
+  name: 文鼎ＰＬ简报宋
+  alias: AR PL SungtiL GB
+  family: 宋体
+  platform: AR PL Fonts
     
 - 
   name: 全字库正宋体
   alias: TW\-Sung
   family: 宋体
+  platform: 全字库
 
 - 
   name: 文泉驿点阵宋
@@ -167,12 +174,6 @@
 ###########################
 
 -
-  name: 全字库正楷体
-  alias: TW\-Kai
-  family: 楷体
-  platform: 全字库
-
--
   name: AR PL UKai
   alias:
     - AR PL UKai CN
@@ -181,6 +182,18 @@
     - AR PL UKai TW MBE
   family: 楷体
   platform: Linux
+
+-
+  name: 文鼎ＰＬ简中楷
+  alias: AR PL KaitiM GB
+  family: 楷体
+  platform: AR PL Fonts
+
+-
+  name: 全字库正楷体
+  alias: TW\-Kai
+  family: 楷体
+  platform: 全字库
 
 -
   name: 楷体
