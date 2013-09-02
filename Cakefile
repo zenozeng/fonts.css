@@ -52,8 +52,10 @@ task "build", ->
     header = "/*!\n
  *  Fonts.css -- Cross-platform Chinese fonts solution\n
  * \n
- *  Copyright (c) 2013 Zeno Zeng\n
+ *  Copyright (C) 2013 Zeno Zeng\n
  *  Released under the MIT license\n
+ * \n
+ *  Github: https://github.com/zenozeng/fonts.css\n
  */\n"
     css = collections.map (collection) -> ".#{collection.class} {#{collection.css}}"
     fs.writeFile 'fonts.css', header+css.join("\n"), (err) -> throw err if err

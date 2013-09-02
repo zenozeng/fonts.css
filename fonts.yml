@@ -130,7 +130,7 @@
   name: 文鼎ＰＬ简报宋
   alias: AR PL SungtiL GB
   family: 宋体
-  platform: AR PL Fonts
+  platform: AR PL
     
 - 
   name: 全字库正宋体
@@ -181,13 +181,15 @@
     - AR PL UKai TW
     - AR PL UKai TW MBE
   family: 楷体
-  platform: Linux
+  platform:
+    - Linux
+    - AR PL
 
 -
   name: 文鼎ＰＬ简中楷
   alias: AR PL KaitiM GB
   family: 楷体
-  platform: AR PL Fonts
+  platform: AR PL
 
 -
   name: 全字库正楷体
@@ -255,7 +257,9 @@
     - AR PL UMing TW
     - AR PL UMing TW MBE
   family: 明体
-  platform: Linux
+  platform:
+    - Linux
+    - AR PL
 
 -
   name: 新细明体

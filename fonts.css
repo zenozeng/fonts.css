@@ -1,8 +1,10 @@
 /*!
  *  Fonts.css -- Cross-platform Chinese fonts solution
  * 
- *  Copyright (c) 2013 Zeno Zeng
+ *  Copyright (C) 2013 Zeno Zeng
  *  Released under the MIT license
+ * 
+ *  Github: https://github.com/zenozeng/fonts.css
  */
 .font-hei-regular {font-family: "Hiragino Sans GB", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Micro Hei Mono", "WenQuanYi Zen Hei", "WenQuanYi Zen Hei", "Apple LiGothic Medium", "SimHei", "ST Heiti", "WenQuanYi Zen Hei Sharp";}
 .font-kai-regular {font-family: "AR PL UKai CN", "AR PL UKai HK", "AR PL UKai TW", "AR PL UKai TW MBE", "AR PL KaitiM GB", "TW\-Kai", "KaiTi", "KaiTi_GB2312", "STKaiti";}
