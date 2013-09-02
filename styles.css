@@ -30,3 +30,8 @@ h2 span {color:#cfcfcf;font-size:14px;}
     border-top: 1px solid #eee;
     padding-top: 12px;
 }
+.notes li::before {
+    content: '> ';
+    color: #333;
+    font-weight: bold;
+}

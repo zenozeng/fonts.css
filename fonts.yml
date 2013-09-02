@@ -220,7 +220,15 @@
   platform:
     - MS Office*
     - Mac
-  note: 苹果提供了华文仿宋作为屏幕显示，但是注意微软 Office 的授权协议不允许将其使用在 Office 之外，这样可能会造成用户在无意识中构成侵权。所以这里把它排在 Windows 自带仿宋的后面，避免用户无意识间侵权。    
+  note: 苹果提供了华文仿宋作为屏幕显示，但是注意微软 Office 的授权协议不允许将其使用在 Office 之外，这样可能会造成用户在无意识中构成侵权。所以这里把它排在 Windows 自带仿宋的后面，避免用户无意识间侵权。
+
+-
+  name: CWTEX仿宋体
+  alias: CWTEX\-F
+  family: 仿宋
+  platform:
+    - CWTEX
+  note: CWTEX仿宋体是繁体字型
   
 ###########################
 # 明体
