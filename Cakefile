@@ -34,11 +34,15 @@ task "build", ->
         results = fonts.filter (font) -> font.family is family and font.weight is weight
         platform = results.map (elem) -> elem.platform
         alias = _.flatten(results.map (elem) -> elem.alias)
+        if weight is "Regular" 
+          className = "font-#{families[family]}"
+        else
+          className = "font-#{families[family]}-#{weights[weight]}"
         collection =
           fonts: alias
           names: results.map (elem) -> elem.name
           header: if weight? then "#{family} <span>#{weight}</span>" else family
-          class: "font-#{families[family]}-#{weights[weight]}"
+          class: className
           css: "font-family: \"#{alias.join('\", \"')}\";"
           notes: _.compact(results.map (elem) -> elem.note)
           # 要 float right，所以倒序一下
