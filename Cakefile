@@ -30,7 +30,7 @@ task "build", ->
     # Collect fonts
     collections = []
     for family in _.keys(families)
-      for weight in _.keys(weights)
+      for weight in ["Regular"]
         results = fonts.filter (font) -> font.family is family and font.weight is weight
         platform = results.map (elem) -> elem.platform
         alias = _.flatten(results.map (elem) -> elem.alias)
@@ -63,6 +63,8 @@ task "build", ->
  */\n"
     css = collections.map (collection) -> ".#{collection.class} {#{collection.css}}"
     fs.writeFile 'fonts.css', header+css.join("\n"), (err) -> throw err if err
+    console.log "Generating fonts.less"
+    fs.writeFile 'fonts.less', header+css.join("\n"), (err) -> throw err if err
 
     # generate index.html
     console.log "Generating index.html"
