@@ -1,0 +1,12 @@
+{
+    "name": "fonts.css",
+    "version": "1.0.0",
+    "ignore": [
+        "bower.json",
+        "Cakefile",
+        "fonts.yml",
+        "index.html",
+        "README.md",
+        "styles.css"
+    ]
+}
