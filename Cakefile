@@ -47,13 +47,14 @@ task "build", ->
             ['"', elem, '"'].join ''
           else
             elem
+        names = results.map (elem) -> "<span data-fonts='#{elem.alias}' data-name='#{elem.name}'>#{elem.name}</span>"
         if weight is "Regular"
           className = "font-#{families[family]}"
         else
           className = "font-#{families[family]}-#{weights[weight]}"
         collection =
           fonts: alias
-          names: results.map (elem) -> elem.name
+          names: names
           header: if weight? then "#{family} <span>#{weight}</span>" else family
           class: className
           css: "font-family: #{alias.join(',')};"
@@ -120,6 +121,11 @@ task "build", ->
 <body class=\"font-hei-regular\">\n
   #{forkongithub}
   <header>Fonts.css -- 跨平台中文字体解决方案</header>\n
+  <div id='notes'>
+    Note: 下滑线标注的为本地存在的字体，关于测试字体的方法，可以看我<a href='https://github.com/zenozeng/font-detect.js'>这个 Repo</a>
+  </div>
   <article>#{collections.join('')}</article>\n
+  <script src='js/font-detect.js'></script>
+  <script src='js/main.js'></script>
 </body>"
     fs.writeFile 'index.html', html, (err) -> throw err if err
