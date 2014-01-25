@@ -55,3 +55,7 @@ THE SOFTWARE.
 - [Microsoft Software License Agreement](http://office.microsoft.com/en-us/products/microsoft-software-license-agreement-FX103576343.aspx)
 
 - [WPS Office Linux版最终用户协议](http://community.wps.cn/wiki/WPS_Office_Linux%E7%89%88%E6%9C%80%E7%BB%88%E7%94%A8%E6%88%B7%E5%8D%8F%E8%AE%AE)
+
+- [如何保证网页的字体在各平台都尽量显示为最高质量的黑体？](http://www.zhihu.com/question/19911793)
+
+- [Web 中文字体应用指南](http://ruby-china.org/topics/14005)
