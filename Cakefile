@@ -9,7 +9,14 @@ families =
   仿宋: "fang-song"
   明体: "ming"
 
-weights = 
+genericFontFamilies =
+  黑体: "sans-serif"
+  楷体: "serif"
+  宋体: "serif"
+  仿宋: "serif"
+  明体: "serif"
+
+weights =
   "Regular": "regular"
   "Ultra Light": "ultra-light"
   "Extra Light": "extra-light"
@@ -34,7 +41,13 @@ task "build", ->
         results = fonts.filter (font) -> font.family is family and font.weight is weight
         platform = results.map (elem) -> elem.platform
         alias = _.flatten(results.map (elem) -> elem.alias)
-        if weight is "Regular" 
+        alias.push genericFontFamilies[family]
+        alias = alias.map (elem) ->
+          if elem.indexOf(' ') > -1
+            ['"', elem, '"'].join ''
+          else
+            elem
+        if weight is "Regular"
           className = "font-#{families[family]}"
         else
           className = "font-#{families[family]}-#{weights[weight]}"
@@ -43,7 +56,7 @@ task "build", ->
           names: results.map (elem) -> elem.name
           header: if weight? then "#{family} <span>#{weight}</span>" else family
           class: className
-          css: "font-family: \"#{alias.join('\", \"')}\";"
+          css: "font-family: #{alias.join(',')};"
           notes: _.compact(results.map (elem) -> elem.note)
           # 要 float right，所以倒序一下
           platform: _.compact(_.uniq(_.flatten(platform)))
