@@ -1,0 +1,7 @@
+{
+    "name": "fonts.css",
+    "dependencies": {
+        "js-yaml": ">=3.0.1",
+        "underscore": "latest"
+    }
+}
