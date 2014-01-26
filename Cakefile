@@ -91,12 +91,9 @@ task "build", ->
         notes = "<div class=\"notes\"><li>#{collection.notes.join('</li><li>')}</li></div>"
       else
         notes = ''
-      # 要 float right，所以倒序一下
-      platform = collection.platform.reverse().map (platform) ->
-        if platform is "MS Office*"
-          "<li class=\"warning\"><a href=\"http://office.microsoft.com/en-us/products/microsoft-software-license-agreement-FX103576343.aspx\" title=\"注意微软 Office 的授权协议不允许将其附带的字体用在 Office 之外的显示，这样可能会造成用户在无意识中构成侵权。应优先调用 Windows 系统默认自带的字体以避免让用户侵权。\">#{platform}</a></li>"
-        else
-          "<li>#{platform}</li>"
+      showPlatform = ["Windows", "Mac", "Linux"].filter (platform) ->
+        collection.platform.indexOf(platform) > -1
+      platform = showPlatform.map (platform) -> "<li>#{platform}</li>"
 
       "\n     <div class=\"collection\">\n
         <div class=\"tags\">#{platform.join('')}</div>\n

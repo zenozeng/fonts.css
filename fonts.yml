@@ -145,6 +145,17 @@
   alias: WenQuanYi Bitmap Song
   family: 宋体
   platform: Linux
+
+- 
+  name: AR PL UMing
+  alias: 
+    - AR PL UMing CN
+    - AR PL UMing HK
+    - AR PL UMing TW
+    - AR PL UMing TW MBE
+  family: 宋体
+  platform: Linux
+  note: 在 Linux 下可能遇到前几种字体都没有安装的情况，在极端情况下暂时先用 AR PL UMing 代替
   
 
 
@@ -192,9 +203,7 @@
     - AR PL UKai TW
     - AR PL UKai TW MBE
   family: 楷体
-  platform:
-    - Linux
-    - AR PL
+  platform: Linux
 
 -
   name: 文鼎ＰＬ简中楷
@@ -259,9 +268,7 @@
     - AR PL UMing TW
     - AR PL UMing TW MBE
   family: 明体
-  platform:
-    - Linux
-    - AR PL
+  platform: Linux
 
 -
   name: 新细明体
