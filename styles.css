@@ -18,11 +18,49 @@ header{font-size:36px;padding-top:12px;line-height:72px;text-align:center}
 h2{font-weight:normal;font-size:24px;line-height:48px;color:#ccc;}
 h2 span {color:#cfcfcf;font-size:14px;}
 .text li{line-height:36px}
-.text .size24{font-size:24px}
+.text .size24{
+    font-size:24px
+}
 .text .size18{font-size:18px}
 .text .size16{font-size:16px}
 .text .size14{font-size:14px}
 .text .size12{font-size:12px}
+.text .size24::before {
+    content: "24px";
+    display: inline-block;
+    width: 70px;
+    font-family: "Helvetica Neue", Helvetica, "Nimbus Sans L", Tahoma;
+    color: #ccc;
+}
+.text .size18::before {
+    content: "18px";
+    display: inline-block;
+    width: 70px;
+    font-family: "Helvetica Neue", Helvetica, "Nimbus Sans L", Tahoma;
+    color: #ccc;
+}
+.text .size16::before {
+    content: "16px";
+    display: inline-block;
+    width: 70px;
+    font-family: "Helvetica Neue", Helvetica, "Nimbus Sans L", Tahoma;
+    color: #ccc;
+}
+.text .size14::before {
+    content: "14px";
+    display: inline-block;
+    width: 70px;
+    font-family: "Helvetica Neue", Helvetica, "Nimbus Sans L", Tahoma;
+    color: #ccc;
+}
+.text .size12::before {
+    content: "12px";
+    display: inline-block;
+    width: 70px;
+    font-family: "Helvetica Neue", Helvetica, "Nimbus Sans L", Tahoma;
+    color: #ccc;
+}
+
 .css{color:#999}
 .class{border-bottom:1px solid #eee;margin-bottom:12px;padding-bottom:12px}
 .notes {
