@@ -17,7 +17,10 @@ nodes.forEach(function(node) {
         });
         if(test.length > 0) {
             var fontName = node.dataset.name;
-            $("[data-name='"+fontName+"']")[0].className = "available";
+            var match = $("[data-name='"+fontName+"']");
+            for(var i = 0; i < match.length; i++) {
+                match[i].className = "available";
+            }
         }
     });
 });

@@ -59,3 +59,7 @@ THE SOFTWARE.
 - [如何保证网页的字体在各平台都尽量显示为最高质量的黑体？](http://www.zhihu.com/question/19911793)
 
 - [Web 中文字体应用指南](http://ruby-china.org/topics/14005)
+
+- [Helvetica](http://zh.wikipedia.org/wiki/Helvetica)
+
+- [Linux Font Equivalents to Popular Web Typefaces](https://mondaybynoon.com/linux-font-equivalents-to-popular-web-typefaces/)

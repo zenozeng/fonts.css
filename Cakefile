@@ -2,6 +2,21 @@ fs = require 'fs'
 yaml = require 'js-yaml'
 _ = require 'underscore'
 
+readFileSync = (file) -> fs.readFileSync file, {encoding: 'UTF-8'}
+
+template =
+  header: readFileSync 'template/header.css'
+
+fonts =
+  cn: readFileSync 'fonts.yml'
+  en: readFileSync 'fonts.en.yml'
+
+# parse fonts
+for key, value of fonts
+  fonts[key] = yaml.load value
+  # fill property with defaults
+  fonts[key] = fonts[key].map (elem) -> _.defaults elem, {weight: "Regular"}
+
 families =
   黑体: "hei"
   楷体: "kai"
@@ -28,18 +43,14 @@ weights =
   "Heavy": "heavy"
 
 task "build", ->
-  fs.readFile 'fonts.yml', {encoding: 'UTF-8'}, (err, data) ->
-    throw err if err
-    # Parse YAML
-    fonts = yaml.load data
-    # fill property with defaults
-    fonts = fonts.map (elem) -> _.defaults elem, {weight: "Regular"}
     # Collect fonts
     collections = []
     for family in _.keys(families)
       for weight in ["Regular"]
-        results = fonts.filter (font) -> font.family is family and font.weight is weight
+        results = fonts.cn.filter (font) -> font.family is family and font.weight is weight
         platform = results.map (elem) -> elem.platform
+        enResults = fonts.en.filter (font) -> font.family is family and font.weight is weight
+        results = enResults.concat results
         alias = _.flatten(results.map (elem) -> elem.alias)
         alias.push genericFontFamilies[family]
         alias = alias.map (elem) ->
@@ -57,7 +68,7 @@ task "build", ->
           names: names
           header: if weight? then "#{family} <span>#{weight}</span>" else family
           class: className
-          css: "font-family: #{alias.join(',')};"
+          css: "font-family: #{alias.join(', ')};"
           notes: _.compact(results.map (elem) -> elem.note)
           # 要 float right，所以倒序一下
           platform: _.compact(_.uniq(_.flatten(platform)))
@@ -67,18 +78,10 @@ task "build", ->
 
     # generate fonts.css
     console.log "Generating fonts.css"
-    header = "/*!\n
- *  Fonts.css -- Cross-platform Chinese fonts solution\n
- * \n
- *  Copyright (C) 2013 Zeno Zeng\n
- *  Released under the MIT license\n
- * \n
- *  Github: https://github.com/zenozeng/fonts.css\n
- */\n"
     css = collections.map (collection) -> ".#{collection.class} {#{collection.css}}"
-    fs.writeFile 'fonts.css', header+css.join("\n"), (err) -> throw err if err
+    fs.writeFile 'fonts.css', template.header+css.join("\n"), (err) -> throw err if err
     console.log "Generating fonts.less"
-    fs.writeFile 'fonts.less', header+css.join("\n"), (err) -> throw err if err
+    fs.writeFile 'fonts.less', template.header+css.join("\n"), (err) -> throw err if err
 
     # generate index.html
     console.log "Generating index.html"
