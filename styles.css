@@ -61,7 +61,13 @@ h2 span {color:#cfcfcf;font-size:14px;}
     color: #ccc;
 }
 
-.css{color:#999}
+.css {
+    color:#999
+}
+.css a {
+    text-decoration: none;
+    color: #555;
+}
 .class{border-bottom:1px solid #eee;margin-bottom:12px;padding-bottom:12px}
 .notes {
     margin-top: 12px;

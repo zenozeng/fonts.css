@@ -58,7 +58,9 @@ task "build", ->
             ['"', elem, '"'].join ''
           else
             elem
-        names = results.map (elem) -> "<span data-fonts='#{elem.alias}' data-name='#{elem.name}'>#{elem.name}</span>"
+        names = results.map (elem) -> "<span data-fonts='#{elem.alias}' data-name='#{elem.name}'>
+          <a href='#' onclick='return false;' title='#{elem.platform}'>#{elem.name}</a>
+          </span>"
         if weight is "Regular"
           className = "font-#{families[family]}"
         else
