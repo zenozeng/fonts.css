@@ -58,9 +58,7 @@
   name: 华文黑体
   alias: ST Heiti
   family: 黑体
-  platform:
-    - Windows[MS Office]
-    - Mac
+  platform: Mac
 
 - 
   name: 中易黑体
