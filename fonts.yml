@@ -59,7 +59,7 @@
   alias: ST Heiti
   family: 黑体
   platform:
-    - MS Office*
+    - Windows[MS Office]
     - Mac
 
 - 
@@ -93,7 +93,7 @@
   family: 黑体
   weight: light
   platform:
-    - MS Office*
+    - Windows[MS Office]
     - Mac
 
 -
@@ -113,7 +113,7 @@
   alias: STSong
   family: 宋体
   platform:
-    - MS Office*
+    - Windows[MS Office]
     - Mac
 
 -
@@ -180,7 +180,7 @@
   family: 宋体
   weight: Medium
   platform:
-    - MS Office*
+    - Windows[MS Office]
     - Mac
   
 ###########################
@@ -192,7 +192,7 @@
   alias: STKaiti
   family: 楷体
   platform:
-    - MS Office*
+    - Windows[MS Office]
     - Mac
 
 -
@@ -235,7 +235,7 @@
   alias: STFangsong
   family: 仿宋
   platform:
-    - MS Office*
+    - Windows[MS Office]
     - Mac
 
 - 

@@ -26,6 +26,14 @@ Fork 这个项目然后修改 fonts.yml。
 如果你要自己编译可以npm安装 coffee-script, js-yaml 然后运行 cake build。
 如果不的话，可以直接 pull request 回来，由我来编译。
 
+# Known Issues
+
+## 关于 MS Office 自带的华文字体
+
+我现在的观点是，作为一个库我应该直接面向 API，
+既然系统的字体列表里有华文字体，那么就应该被认为是可用的。
+再加上华文字体是 Mac 下默认就提供的字体，所以我调整了华文字体在列表里头的顺序。
+
 # License
 
 Copyright (C) 2013-2014 Zeno Zeng
