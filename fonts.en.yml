@@ -60,9 +60,7 @@
 - name: Nimbus Roman No9
   alias: Nimbus Roman No9 L
   family: 宋体
-  platform:
-    - Windows
-    - Mac
+  platform: Linux
 
 ###########################
 # 明体 (regular)
@@ -78,6 +76,50 @@
 - name: Nimbus Roman No9
   alias: Nimbus Roman No9 L
   family: 明体
+  platform: Linux
+
+###########################
+# 仿宋 (regular)
+###########################
+
+# Mac 10.6+
+- name: Baskerville
+  alias: Baskerville
+  family: 仿宋
+  platform: Mac
+
+# Win XP
+# Mac 下叫做 Times Roman，但既然有了 Baskerville 这里就不加上了
+- name: Times New Roman
+  alias: Times New Roman
+  family: 仿宋
+  platform: Windows
+  note: 某些 Linux 中 Times New Roman 会自动 fallback 到 Liberation Serif （具体见 /etc/fonts/conf.d/30-metric-aliases.conf, debian jessie/sid ）
+
+- name: Liberation Serif
+  alias: Liberation Serif
+  family: 仿宋
+  platform: Linux
+
+
+###########################
+# 楷体 (regular)
+###########################
+
+# Mac 10.6+
+- name: Baskerville
+  alias: Baskerville
+  family: 楷体
+  platform: Mac
+
+- name: Georgia
+  alias: Georgia
+  family: 楷体
   platform:
     - Windows
-    - Mac    
+    - Mac
+
+- name: Liberation Serif
+  alias: Liberation Serif
+  family: 楷体
+  platform: Linux

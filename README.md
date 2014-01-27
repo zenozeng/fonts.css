@@ -73,3 +73,5 @@ THE SOFTWARE.
 - [Linux Font Equivalents to Popular Web Typefaces](https://mondaybynoon.com/linux-font-equivalents-to-popular-web-typefaces/)
 
 - [Fonts supplied with Windows XP](http://www.microsoft.com/typography/fonts/winxp.htm)
+
+- [Mac OS X v10.6: Fonts list](http://support.apple.com/kb/ht5154)
