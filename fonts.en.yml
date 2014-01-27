@@ -28,10 +28,12 @@
   family: 黑体
   platform: Linux
 
-- name: Tahoma
-  alias: Tahoma
-  family: 黑体
-  platform: Windows
+# Tahoma 和 Arial 都是 Windows 带的字体，没必要包含两个，
+# 而 Arial 更接近 Helvetica。-- by xhacker
+# - name: Tahoma
+#   alias: Tahoma
+#   family: 黑体
+#   platform: Windows
 
 - name: Arial
   alias: Arial

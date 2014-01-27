@@ -71,3 +71,5 @@ THE SOFTWARE.
 - [Helvetica](http://zh.wikipedia.org/wiki/Helvetica)
 
 - [Linux Font Equivalents to Popular Web Typefaces](https://mondaybynoon.com/linux-font-equivalents-to-popular-web-typefaces/)
+
+- [Fonts supplied with Windows XP](http://www.microsoft.com/typography/fonts/winxp.htm)
