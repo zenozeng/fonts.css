@@ -14,7 +14,7 @@ http://zenozeng.github.io/fonts.css/
     <link rel="stylesheet" type="text/css" href="fonts.css" />
 </head>
 <body>
-    <p class="font-kai-normal">
+    <p class="font-kai">
         故天将降大任于是人也必先苦其心智劳其筋骨饿其体肤空乏其身行弗乱其所为所以动心忍性曾益其所不能
     </p>
 </body>
