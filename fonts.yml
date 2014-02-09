@@ -107,6 +107,13 @@
 ###########################
 
 - 
+  name: Songti SC
+  alias: Songti SC
+  family: 宋体
+  platform:
+    - Mac
+
+- 
   name: 华文宋体
   alias: STSong
   family: 宋体
@@ -184,6 +191,13 @@
 ###########################
 # 楷体
 ###########################
+
+- 
+  name: Kaiti SC
+  alias: Kaiti SC
+  family: 楷体
+  platform:
+    - Mac
 
 -
   name: 华文楷体
