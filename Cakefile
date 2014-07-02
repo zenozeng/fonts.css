@@ -54,7 +54,7 @@ task "build", ->
         alias = _.flatten(results.map (elem) -> elem.alias)
         alias.push genericFontFamilies[family]
         alias = alias.map (elem) ->
-          if elem.indexOf(' ') > -1
+          if (elem.indexOf(' ') > -1) or (elem.indexOf('\\') > -1)
             ['"', elem, '"'].join ''
           else
             elem
@@ -80,8 +80,18 @@ task "build", ->
     console.log "Generating fonts.css"
     css = collections.map (collection) -> ".#{collection.class} {#{collection.css}}"
     fs.writeFile 'fonts.css', template.header+css.join("\n"), (err) -> throw err if err
+
+    # generate fonts.less
     console.log "Generating fonts.less"
+    css = collections.map (collection) ->
+      ".#{collection.class}() {\n  font-family: #{collection.fonts.join(', ')};\n}"
     fs.writeFile 'fonts.less', template.header+css.join("\n"), (err) -> throw err if err
+
+    # generate fonts.styl
+    console.log "Generating fonts.styl"
+    css = collections.map (collection) ->
+      "#{collection.class}()\n  font-family #{collection.fonts.join(', ')}"
+    fs.writeFile 'fonts.styl', template.header+css.join("\n"), (err) -> throw err if err
 
     # generate index.html
     console.log "Generating index.html"
