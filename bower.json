@@ -1,6 +1,6 @@
 {
     "name": "fonts.css",
-    "version": "1.3.0",
+    "version": "1.3.1",
     "ignore": [
         "bower.json",
         "Cakefile",
@@ -9,6 +9,9 @@
         "README.md",
         "styles.css",
         "test",
-        "template"
+        "template",
+        "js",
+        "fonts.en.yml",
+        "package.json"
     ]
 }
