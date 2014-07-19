@@ -15,6 +15,13 @@
   family: 黑体
   platform: Mac
 
+-
+  name: 思源黑体
+  alias: Source Han Sans CN Normal
+  family: 黑体
+  note: "关于思源黑体，这里默认用更适合白底的 Normal (see also: http://www.zhihu.com/question/24499749)"
+  platform: Adobe
+
 - 
   name: 微软雅黑
   alias: Microsoft YaHei
