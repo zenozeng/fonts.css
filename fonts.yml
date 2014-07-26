@@ -129,6 +129,13 @@
     - Mac
 
 -
+  name: AR PL New Sung
+  alias: AR PL New Sung
+  family: 宋体
+  platform:
+    - Linux
+
+-
   name: 文鼎ＰＬ简报宋
   alias: AR PL SungtiL GB
   family: 宋体
