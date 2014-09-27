@@ -110,11 +110,11 @@ task "build", ->
         <h2 class=\"font-hei-regular\">#{collection.header}</h2>\n
         <div class=\"text #{collection.class}\">\n
           <ul>\n
-            <li class=\"size24\">我能吞下玻璃而不伤身体，a fox jumps over the lazy dog<li>\n
-            <li class=\"size18\">我能吞下玻璃而不伤身体，a fox jumps over the lazy dog<li>\n
-            <li class=\"size16\">我能吞下玻璃而不伤身体，a fox jumps over the lazy dog<li>\n
-            <li class=\"size14\">我能吞下玻璃而不伤身体，a fox jumps over the lazy dog<li>\n
-            <li class=\"size12\">我能吞下玻璃而不伤身体，a fox jumps over the lazy dog<li>\n
+            <li class=\"size24\">我能吞下玻璃而不伤身体，a fox jumps over the lazy dog</li>\n
+            <li class=\"size18\">我能吞下玻璃而不伤身体，a fox jumps over the lazy dog</li>\n
+            <li class=\"size16\">我能吞下玻璃而不伤身体，a fox jumps over the lazy dog</li>\n
+            <li class=\"size14\">我能吞下玻璃而不伤身体，a fox jumps over the lazy dog</li>\n
+            <li class=\"size12\">我能吞下玻璃而不伤身体，a fox jumps over the lazy dog</li>\n
           </ul>\n
         </div>\n
         <div class=\"class\">.#{collection.class}</div>\n
