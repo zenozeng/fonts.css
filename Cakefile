@@ -14,8 +14,6 @@ fonts =
 # parse fonts
 for key, value of fonts
   fonts[key] = yaml.load value
-  # fill property with defaults
-  fonts[key] = fonts[key].map (elem) -> _.defaults elem, {weight: "Regular"}
 
 families =
   黑体: "hei"
@@ -31,48 +29,32 @@ genericFontFamilies =
   仿宋: "serif"
   明体: "serif"
 
-weights =
-  "Regular": "regular"
-  "Ultra Light": "ultra-light"
-  "Extra Light": "extra-light"
-  "Light": "light"
-  "Medium": "medium"
-  "Bold": "bold"
-  "Extra Bold": "extra-bold"
-  "Ultra Bold": "ultra-bold"
-  "Heavy": "heavy"
-
 task "build", ->
     # Collect fonts
     collections = []
     for family in _.keys(families)
-      for weight in ["Regular"]
-        results = fonts.cn.filter (font) -> font.family is family and font.weight is weight
-        platform = results.map (elem) -> elem.platform
-        enResults = fonts.en.filter (font) -> font.family is family and font.weight is weight
-        results = enResults.concat results
-        alias = _.flatten(results.map (elem) -> elem.alias)
-        alias.push genericFontFamilies[family]
-        alias = alias.map (elem) ->
-          if (elem.indexOf(' ') > -1) or (elem.indexOf('\\') > -1)
-            ['"', elem, '"'].join ''
-          else
-            elem
-        names = results.map (elem) -> "<span data-fonts='#{elem.alias}' data-name='#{elem.name}'><a href='#' onclick='return false;' title='#{elem.platform}'>#{elem.name}</a></span>"
-        if weight is "Regular"
-          className = "font-#{families[family]}"
+      results = fonts.cn.filter (font) -> font.family is family
+      platform = results.map (elem) -> elem.platform
+      enResults = fonts.en.filter (font) -> font.family is family
+      results = enResults.concat results
+      alias = _.flatten(results.map (elem) -> elem.alias)
+      alias.push genericFontFamilies[family]
+      alias = alias.map (elem) ->
+        if (elem.indexOf(' ') > -1) or (elem.indexOf('\\') > -1)
+          ['"', elem, '"'].join ''
         else
-          className = "font-#{families[family]}-#{weights[weight]}"
-        collection =
-          fonts: alias
-          names: names
-          header: if weight? then "#{family} <span>#{weight}</span>" else family
-          class: className
-          css: "font-family: #{alias.join(', ')};"
-          notes: _.compact(results.map (elem) -> elem.note)
-          # 要 float right，所以倒序一下
-          platform: _.compact(_.uniq(_.flatten(platform)))
-        collections.push collection
+          elem
+      names = results.map (elem) -> "<span data-fonts='#{elem.alias}' data-name='#{elem.name}'><a href='#' onclick='return false;' title='#{elem.platform}'>#{elem.name}</a></span>"
+      collection =
+        fonts: alias
+        names: names
+        header: family
+        class: "font-#{families[family]}"
+        css: "font-family: #{alias.join(', ')};"
+        notes: _.compact(results.map (elem) -> elem.note)
+        # 要 float right，所以倒序一下
+        platform: _.compact(_.uniq(_.flatten(platform)))
+      collections.push collection
     # filter empty collections
     collections = collections.filter (collection) -> collection.fonts.length > 0
 

@@ -2,7 +2,6 @@
 
 一直以来跨平台的中文字体 CSS 设置都是一件让人很头疼的事情，这个库打包了一些常见字体的名字，希望能覆盖 Windows、Mac 以及 Linux 的常见字体，方便引用。
 
-
 ## Demo & Doc
 
 http://zenozeng.github.io/fonts.css/

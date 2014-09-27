@@ -1,12 +1,12 @@
 ---
 # Fonts.yml
-# Copyright (C) 2013 Zeno Zeng 
+# Copyright (C) 2013-2014 Zeno Zeng and other contributors
 # Lincensed under the MIT License
 
 # 字体的排序会按照在这个文件中的顺序排列
 
 ###########################
-# 黑体 (regular)
+# 黑体
 ###########################
 
 - 
@@ -81,37 +81,7 @@
   platform: Linux
 
 ###########################
-# 黑体 (细)
-###########################
-  
--
-  name: 文泉驿微米黑细
-  alias: WenQuanYi Micro Hei Light
-  family: 黑体
-  weight: light
-  platform: Linux
-  
--
-  name: 华文细黑
-  alias:
-    - STHeiti Light
-    - STXihei
-  family: 黑体
-  weight: light
-  platform:
-    - Windows[MS Office]
-    - Mac
-
--
-  name: 文泉驿等宽微米黑细
-  alias: WenQuanYi Micro Hei Mono Light
-  family: 黑体
-  weight: light
-  platform: Linux
-
-
-###########################
-# 宋体 (Regular)
+# 宋体
 ###########################
 
 - 
@@ -179,30 +149,6 @@
   
 
 
-###########################
-# 宋体 (细)
-###########################
-
--
-  name: 苹果丽细宋
-  alias: Apple LiSung Light
-  family: 宋体
-  weight: light
-  platform: Mac
-
-###########################
-# 宋体 (中)
-###########################
-
--
-  name: 华文中宋
-  alias: STZhongsong
-  family: 宋体
-  weight: Medium
-  platform:
-    - Windows[MS Office]
-    - Mac
-  
 ###########################
 # 楷体
 ###########################
