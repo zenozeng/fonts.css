@@ -1,6 +1,6 @@
 # Fonts.css -- 跨平台中文字体解决方案
 
-一直以来跨平台的中文字体 CSS 设置都是一件让人很头疼的事情，这个库打包了一些常见字体的名字，希望能覆盖 Windows、Mac 以及 Linux 的常见字体，方便引用。
+一直以来跨平台的中文字体 CSS 设置都是一件让人很头疼的事情，这个库打包了一些常见字体的名字，希望能覆盖 Windows、Mac 以及 Linux 的常见字体，方便引用。在 font-family 直接支持宋、楷、黑和仿宋之前，我觉得这样一种解决方案依然还是必要的。
 
 ## Demo & Doc
 
@@ -35,7 +35,7 @@ Fork 这个项目然后修改 fonts.yml。
 
 # License
 
-Copyright (C) 2013-2014 Zeno Zeng
+Copyright (C) 2013-2015 Zeno Zeng
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
