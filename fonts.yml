@@ -1,6 +1,6 @@
 ---
 # Fonts.yml
-# Copyright (C) 2013-2014 Zeno Zeng and other contributors
+# Copyright (C) 2013-2015 Zeno Zeng and other contributors
 # Lincensed under the MIT License
 
 # 字体的排序会按照在这个文件中的顺序排列
@@ -8,6 +8,12 @@
 ###########################
 # 黑体
 ###########################
+
+- 
+  name: PingFang
+  alias: PingFang SC
+  family: 黑体
+  platform: Mac
 
 - 
   name: 冬青黑
