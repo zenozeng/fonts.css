@@ -36,10 +36,6 @@
 
 # Tahoma 和 Arial 都是 Windows 带的字体，没必要包含两个，
 # 而 Arial 更接近 Helvetica。-- by xhacker
-# - name: Tahoma
-#   alias: Tahoma
-#   family: 黑体
-#   platform: Windows
 
 - name: Arial
   alias: Arial
@@ -66,22 +62,6 @@
 - name: Nimbus Roman No9
   alias: Nimbus Roman No9 L
   family: 宋体
-  platform: Linux
-
-###########################
-# 明体 (regular)
-###########################
-
-- name: Georgia
-  alias: Georgia
-  family: 明体
-  platform:
-    - Windows
-    - Mac
-
-- name: Nimbus Roman No9
-  alias: Nimbus Roman No9 L
-  family: 明体
   platform: Linux
 
 ###########################

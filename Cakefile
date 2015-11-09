@@ -20,14 +20,12 @@ families =
   楷体: "kai"
   宋体: "song"
   仿宋: "fang-song"
-  明体: "ming"
 
 genericFontFamilies =
   黑体: "sans-serif"
   楷体: "serif"
   宋体: "serif"
   仿宋: "serif"
-  明体: "serif"
 
 task "build", ->
     # Collect fonts
