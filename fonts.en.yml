@@ -1,6 +1,6 @@
 ---
 # Fonts.en.yml
-# Copyright (C) 2013 Zeno Zeng 
+# Copyright (C) 2013-2015 Zeno Zeng
 # Lincensed under the MIT License
 
 # 字体的排序会按照在这个文件中的顺序排列
@@ -8,6 +8,12 @@
 ###########################
 # 黑体 (regular)
 ###########################
+
+- name: Apple System
+  alias: -apple-system
+  family: 黑体
+  platform: Mac
+  note: "Use apple system font (like San Francisco) by default, see also: https://github.com/zenozeng/fonts.css/issues/29"
 
 - name: Helvetica Neue
   alias: Helvetica Neue
