@@ -6,6 +6,12 @@
 
 http://zenozeng.github.io/fonts.css/
 
+## NPM
+
+```bash
+npm install fonts.css --save
+```
+
 ## Usage
 
 ```html
