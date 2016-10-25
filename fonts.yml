@@ -196,6 +196,12 @@
   platform: Windows
 
 -
+  name: 標楷體
+  alias: DFKai-SB
+  family: 楷体
+  platform: Windows
+
+-
   name: 全字库正楷体
   alias: TW\-Kai
   family: 楷体
