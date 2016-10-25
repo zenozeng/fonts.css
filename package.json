@@ -1,13 +1,7 @@
 {
   "name": "fonts.css",
-  "dependencies": {
-    "js-yaml": ">=3.0.1"
-  },
   "version": "1.4.1",
   "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -24,6 +18,7 @@
     "url": "https://github.com/zenozeng/fonts.css/issues"
   },
   "devDependencies": {
+    "js-yaml": "^3.6.1",
     "lodash": "^4.16.4"
   }
 }
