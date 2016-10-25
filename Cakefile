@@ -1,6 +1,6 @@
 fs = require 'fs'
 yaml = require 'js-yaml'
-_ = require 'underscore'
+_ = require 'lodash'
 
 readFileSync = (file) -> fs.readFileSync file, {encoding: 'UTF-8'}
 
@@ -8,8 +8,8 @@ template =
   header: readFileSync 'template/header.css'
 
 fonts =
-  cn: readFileSync 'fonts.yml'
-  en: readFileSync 'fonts.en.yml'
+  cn: readFileSync 'src/fonts.yml'
+  en: readFileSync 'src/fonts.en.yml'
 
 # parse fonts
 for key, value of fonts

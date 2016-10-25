@@ -1,8 +1,7 @@
 {
   "name": "fonts.css",
   "dependencies": {
-    "js-yaml": ">=3.0.1",
-    "underscore": "latest"
+    "js-yaml": ">=3.0.1"
   },
   "version": "1.4.1",
   "main": "index.js",
@@ -23,5 +22,8 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/zenozeng/fonts.css/issues"
+  },
+  "devDependencies": {
+    "lodash": "^4.16.4"
   }
 }
