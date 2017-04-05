@@ -22,10 +22,17 @@
   platform: Mac
 
 - 
+  name: Noto Sans CJK
+  alias:
+    - Noto Sans CJK SC
+  family: 黑体
+  platform: Linux
+
+- 
   name: 思源黑体
   alias:
-    - Source Han Sans CN
     - Source Han Sans SC
+    - Source Han Sans CN
   family: 黑体
   platform: Adobe
 
@@ -104,6 +111,21 @@
   platform:
     - Windows[MS Office]
     - Mac
+ 
+ - 
+  name: Noto Serif CJK
+  alias:
+    - Noto Serif CJK SC
+  family: 宋体
+  platform: Linux
+
+- 
+  name: 思源宋体
+  alias:
+    - Source Han Serif SC
+    - Source Han Serif CN
+  family: 宋体
+  platform: Adobe
 
 -
   name: AR PL New Sung
