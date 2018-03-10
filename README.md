@@ -1,6 +1,6 @@
 # Fonts.css -- 跨平台中文字体解决方案
 
-一直以来跨平台的中文字体 CSS 设置都是一件让人很头疼的事情，这个库打包了一些常见字体的名字，希望能覆盖 Windows、Mac 以及 Linux 的常见字体，方便引用。在 font-family 直接支持宋、楷、黑和仿宋之前，我觉得这样一种解决方案依然还是必要的。
+一直以来跨平台的中文字体 CSS 设置都是一件让人很头疼的事情，这个库打包了一些常见字体的名字，希望能覆盖 Windows、Mac 以及 Linux 的常见字体，方便引用。在 font-family 直接支持宋、楷、黑和仿宋之前，我觉得这样一种解决方案依然还是有其存在价值的。
 
 ## Demo & Doc
 
@@ -27,26 +27,18 @@ npm install fonts.css --save
 
 # Contributors
 
-- @blackgear
-- @Bubblings
-- @DreaminginCodeZH
-- @fyears
-- @Hexcles
-- @xhacker
-- @YuzhongHuangCS
-- @yzyzsun
-
-# Known Issues
-
-## 关于 MS Office 自带的华文字体
-
-我现在的观点是，作为一个库我应该直接面向 API，
-既然系统的字体列表里有华文字体，那么就应该被认为是可用的。
-再加上华文字体是 Mac 下默认就提供的字体，所以我调整了华文字体在列表里头的顺序。
+- [@blackgear](https://github.com/blackgear)
+- [@Bubblings](https://github.com/Bubblings)
+- [@DreaminginCodeZH](https://github.com/DreaminginCodeZH)
+- [@fyears](https://github.com/fyears)
+- [@Hexcles](https://github.com/Hexcles)
+- [@xhacker](https://github.com/xhacker)
+- [@YuzhongHuangCS](https://github.com/YuzhongHuangCS)
+- [@yzyzsun](https://github.com/yzyzsun)
 
 # License
 
-Copyright (C) 2013-2018 Zeno Zeng
+Copyright (C) 2013-2018 Zeno Zeng and contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
