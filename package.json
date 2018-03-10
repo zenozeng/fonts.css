@@ -3,7 +3,8 @@
   "version": "2.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "ts-node src/build.ts"
+    "build": "ts-node src/build.ts",
+    "webpack": "webpack"
   },
   "repository": {
     "type": "git",
@@ -20,9 +21,14 @@
   "devDependencies": {
     "@types/js-yaml": "^3.10.1",
     "@types/node": "^9.4.7",
+    "css-loader": "^0.28.10",
     "font-detect": "^1.0.0",
     "js-yaml": "^3.11.0",
+    "ts-loader": "^4.0.1",
     "ts-node": "^5.0.1",
-    "typescript": "^2.7.2"
+    "typescript": "^2.7.2",
+    "vue": "^2.5.14",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.11"
   }
 }
