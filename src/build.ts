@@ -29,8 +29,8 @@ function styl(result: ParseResult) {
 }
 
 (async function () {
-    const fontsYAML = await readFile('src/fonts.yml')
-    const enFontsYAML = await readFile('src/fonts.en.yml')
+    const fontsYAML = await readFile('src/fonts/fonts.yml')
+    const enFontsYAML = await readFile('src/fonts/fonts.en.yml')
     const fonts = yaml.load(fontsYAML) as  Font[]
     const enFonts = yaml.load(enFontsYAML) as Font[]
     const results = new Parser(fonts, enFonts).parse()
