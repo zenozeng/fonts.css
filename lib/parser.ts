@@ -21,27 +21,27 @@ const genericFamilies: GenericFamily[] = [
     {
         name: "黑体",
         fallbackGenericFamily: "sans-serif",
-        className: "hei",
+        className: "font-hei",
     },
     {
         name: "楷体",
         fallbackGenericFamily: "serif",
-        className: "kai",
+        className: "font-kai",
     },
     {
         name: "宋体",
         fallbackGenericFamily: "serif",
-        className: "song",
+        className: "font-song",
     },
     {
         name: "仿宋",
         fallbackGenericFamily: "serif",
-        className: "fang-song",
+        className: "font-fang-song",
     },
 ]
 
 export class Parser {
-    
+
     constructor(private fonts: Font[], private enFonts: Font[]) {}
 
     parseGenericFamily(genericFamily: GenericFamily) : ParseResult {
@@ -52,6 +52,7 @@ export class Parser {
         result.fonts = result.fonts.concat(this.fonts.filter(filter))
         result.cssFontFamilies = ([] as string[]).concat(...result.fonts.map((font) => font.alias)) // type of font.alias is string[] | string, flatten here
         result.cssFontFamilies.push(genericFamily.fallbackGenericFamily)
+        result.cssFontFamilies = result.cssFontFamilies.map((str) => str.indexOf(" ") > -1 || str.indexOf("\\") > -1 ? `"${str}"` : str)
         return result
     }
 

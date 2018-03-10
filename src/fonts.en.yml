@@ -1,6 +1,6 @@
 ---
 # Fonts.en.yml
-# Copyright (C) 2013-2015 Zeno Zeng
+# Copyright (C) 2013-2018 Zeno Zeng and contributors
 # Lincensed under the MIT License
 
 # 字体的排序会按照在这个文件中的顺序排列
@@ -11,18 +11,18 @@
 
 - name: Apple System
   alias: -apple-system
-  family: 黑体
+  genericFamilyName: 黑体
   platform: Mac
   note: "Use apple system font (like San Francisco) by default, see also: https://github.com/zenozeng/fonts.css/issues/29"
 
 - name: Helvetica Neue
   alias: Helvetica Neue
-  family: 黑体
+  genericFamilyName: 黑体
   platform: Mac
 
 - name: Helvetica
   alias: Helvetica
-  family: 黑体
+  genericFamilyName: 黑体
   platform:
     - Windows
     - Mac
@@ -31,7 +31,7 @@
 # 基于 Helvetica 的 GNU/Linux 字体
 - name: Nimbus Sans L
   alias: Nimbus Sans L
-  family: 黑体
+  genericFamilyName: 黑体
   platform: Linux
 
 # Tahoma 和 Arial 都是 Windows 带的字体，没必要包含两个，
@@ -39,13 +39,13 @@
 
 - name: Arial
   alias: Arial
-  family: 黑体
+  genericFamilyName: 黑体
   platform: Windows
   note: 某些 Linux 中 Arial 会自动 fallback 到 Liberation Sans （具体见 /etc/fonts/conf.d/30-metric-aliases.conf, debian jessie/sid ）
 
 - name: Liberation Sans
   alias: Liberation Sans
-  family: 黑体
+  genericFamilyName: 黑体
   platform: Linux
 
 ###########################
@@ -54,14 +54,14 @@
 
 - name: Georgia
   alias: Georgia
-  family: 宋体
+  genericFamilyName: 宋体
   platform:
     - Windows
     - Mac
 
 - name: Nimbus Roman No9
   alias: Nimbus Roman No9 L
-  family: 宋体
+  genericFamilyName: 宋体
   platform: Linux
 
 ###########################
@@ -71,20 +71,20 @@
 # Mac 10.6+
 - name: Baskerville
   alias: Baskerville
-  family: 仿宋
+  genericFamilyName: 仿宋
   platform: Mac
 
 # Win XP
 # Mac 下叫做 Times Roman，但既然有了 Baskerville 这里就不加上了
 - name: Times New Roman
   alias: Times New Roman
-  family: 仿宋
+  genericFamilyName: 仿宋
   platform: Windows
   note: 某些 Linux 中 Times New Roman 会自动 fallback 到 Liberation Serif （具体见 /etc/fonts/conf.d/30-metric-aliases.conf, debian jessie/sid ）
 
 - name: Liberation Serif
   alias: Liberation Serif
-  family: 仿宋
+  genericFamilyName: 仿宋
   platform: Linux
 
 
@@ -95,17 +95,17 @@
 # Mac 10.6+
 - name: Baskerville
   alias: Baskerville
-  family: 楷体
+  genericFamilyName: 楷体
   platform: Mac
 
 - name: Georgia
   alias: Georgia
-  family: 楷体
+  genericFamilyName: 楷体
   platform:
     - Windows
     - Mac
 
 - name: Liberation Serif
   alias: Liberation Serif
-  family: 楷体
+  genericFamilyName: 楷体
   platform: Linux

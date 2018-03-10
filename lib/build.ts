@@ -13,23 +13,22 @@ function css(result: ParseResult) {
 
 function less(result: ParseResult) {
     return `.${result.className}() {
-    font-family: ${result.cssFontFamilies.join(", ")};
+  font-family: ${result.cssFontFamilies.join(", ")};
 }`
 }
 
 function scss(result: ParseResult) {
     return `@mixin ${result.className} {
-    font-family: ${result.cssFontFamilies.join(", ")}
+  font-family: ${result.cssFontFamilies.join(", ")}
 }`
 }
 
 function styl(result: ParseResult) {
     return `${result.className}()
-    font-family ${result.cssFontFamilies.join(", ")}`
+  font-family ${result.cssFontFamilies.join(", ")}`
 }
 
 (async function () {
-    const headerTemplate = await readFile('template/header.css')
     const fontsYAML = await readFile('src/fonts.yml')
     const enFontsYAML = await readFile('src/fonts.en.yml')
     const fonts = yaml.load(fontsYAML) as  Font[]
@@ -37,6 +36,6 @@ function styl(result: ParseResult) {
     const results = new Parser(fonts, enFonts).parse()
     const writeFile = promisify(fs.writeFile);
     for (let fn of [css, less, scss, styl]) {
-        await writeFile("fonts." + fn.name, headerTemplate + results.map(fn).join("\n"))
+        await writeFile("fonts." + fn.name, results.map(fn).join("\n"))
     }
 })()

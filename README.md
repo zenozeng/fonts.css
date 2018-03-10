@@ -41,7 +41,7 @@ Fork 这个项目然后修改 fonts.yml。
 
 # License
 
-Copyright (C) 2013-2015 Zeno Zeng
+Copyright (C) 2013-2018 Zeno Zeng
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
