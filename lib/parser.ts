@@ -1,6 +1,3 @@
-import * as fs from 'fs'
-import { promisify } from 'util'
-
 interface GenericFamily {
     name: string
     fallbackGenericFamily: string
@@ -37,12 +34,6 @@ const genericFamilies: GenericFamily[] = [
     },
 ]
 
-function readFile(path: string) {
-    return promisify(fs.readFile)(path, {encoding: 'UTF-8'})
+class Parser {
+    
 }
-
-async function build() {
-    const headerTemplate = await readFile('template/header.css')
-}
-
-build()
