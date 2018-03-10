@@ -41,6 +41,7 @@ const genericFamilies: GenericFamily[] = [
 ]
 
 export class Parser {
+    
     constructor(private fonts: Font[], private enFonts: Font[]) {}
 
     parseGenericFamily(genericFamily: GenericFamily) : ParseResult {
