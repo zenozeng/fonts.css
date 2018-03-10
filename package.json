@@ -3,7 +3,7 @@
   "version": "1.5.0",
   "main": "index.js",
   "scripts": {
-    "build": "ts-node build.ts"
+    "build": "ts-node lib/build.ts"
   },
   "repository": {
     "type": "git",
@@ -18,10 +18,10 @@
     "url": "https://github.com/zenozeng/fonts.css/issues"
   },
   "devDependencies": {
+    "@types/js-yaml": "^3.10.1",
+    "@types/node": "^9.4.7",    
+    "js-yaml": "^3.11.0",
     "ts-node": "^5.0.1",
     "typescript": "^2.7.2"
-  },
-  "dependencies": {
-    "@types/node": "^9.4.7"
   }
 }
