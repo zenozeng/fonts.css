@@ -1,11 +1,14 @@
 {
     "compilerOptions": {
-        "module": "commonjs",
-        "noImplicitAny": true,
-        "noImplicitThis": true,
-        "removeComments": true,
-        "preserveConstEnums": true,
+        "noImplicitReturns": true,
         "sourceMap": true,
-        "target": "es6"
-    }
+        "target": "es6",
+        "outDir": "./dist/",
+        "module": "es2015",
+        "moduleResolution": "node",
+        "strict": true,
+    },
+    "include": [
+        "./src/**/*"
+    ]
 }
