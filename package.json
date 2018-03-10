@@ -3,8 +3,7 @@
   "version": "1.5.0",
   "main": "index.js",
   "scripts": {
-    "build": "cake build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "ts-node build.ts"
   },
   "repository": {
     "type": "git",
@@ -19,8 +18,7 @@
     "url": "https://github.com/zenozeng/fonts.css/issues"
   },
   "devDependencies": {
-    "coffee-script": "^1.11.1",
-    "js-yaml": "^3.6.1",
-    "lodash": "^4.16.4"
+    "ts-node": "^5.0.1",
+    "typescript": "^2.7.2"
   }
 }
