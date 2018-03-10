@@ -13,19 +13,19 @@ function css(result: ParseResult) {
 
 function less(result: ParseResult) {
     return `.${result.className}() {
-  font-family: ${result.cssFontFamilies.join(", ")};
+    font-family: ${result.cssFontFamilies.join(", ")};
 }`
 }
 
 function scss(result: ParseResult) {
     return `@mixin ${result.className} {
-  font-family: ${result.cssFontFamilies.join(", ")}
+    font-family: ${result.cssFontFamilies.join(", ")}
 }`
 }
 
 function styl(result: ParseResult) {
     return `${result.className}()
-  font-family ${result.cssFontFamilies.join(", ")}`
+    font-family ${result.cssFontFamilies.join(", ")}`
 }
 
 (async function () {

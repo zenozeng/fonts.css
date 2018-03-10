@@ -24,9 +24,9 @@
 - 
   name: 思源黑体
   alias:
-    - Source Han Sans CN
+    - Noto Sans CJK SC
     - Source Han Sans SC
-    # - Noto Sans CJK SC
+    - Source Han Sans CN
   genericFamilyName: 黑体
   platform: Linux
   note: 一些新的 Linux 发行版预装了该字体（Debian Stretch+ 提供了 fonts-noto-cjk 包，内含：Noto Sans CJK 以及 Noto Sans Mono CJK）
@@ -42,13 +42,7 @@
   alias: Wenquanyi Micro Hei
   genericFamilyName: 黑体
   platform: Linux
-
-# 没有必要：一般有文泉驿等宽微米黑则有文泉驿微米黑
-# - 
-#   name: 文泉驿等宽微米黑
-#   alias: WenQuanYi Micro Hei Mono
-#   genericFamilyName: 黑体
-#   platform: Linux
+  note: 文泉驿等宽微米黑未加入此列表，因为预装该字体的发行版一般都有文泉驿微米黑
 
 - 
   name: 文泉驿正黑
@@ -56,25 +50,12 @@
   genericFamilyName: 黑体
   platform: Linux
 
-# 没有必要：一般有文泉驿等宽正黑则必有文泉驿正黑
-# - 
-#   name: 文泉驿等宽正黑
-#   alias: WenQuanYi Zen Hei
-#   genericFamilyName: 黑体
-#   platform: Linux
-
-# 低版本的 Mac 也已经有了华文黑体
-# - 
-#   name: 苹果丽中黑
-#   alias: Apple LiGothic Medium
-#   genericFamilyName: 黑体
-#   platform: Mac
-
 - 
   name: 华文黑体
   alias: ST Heiti
   genericFamilyName: 黑体
   platform: Mac
+  note: 苹果丽中黑未加入此列表，因为低版本的 Mac 也有了华文黑体
 
 - 
   name: 中易黑体
@@ -107,20 +88,14 @@
     - Windows[MS Office]
     - Mac
 
-# - 
-#   name: Noto Serif CJK
-#   alias:
-#     - Noto Serif CJK SC
-#   genericFamilyName: 宋体
-#   platform: Adobe
-
-# - 
-#   name: 思源宋体
-#   alias:
-#     - Source Han Serif SC
-#     - Source Han Serif CN
-#   genericFamilyName: 宋体
-#   platform: Adobe
+- 
+  name: 思源宋体
+  alias:
+    - Noto Serif CJK SC
+    - Source Han Serif SC
+    - Source Han Serif CN
+  genericFamilyName: 宋体
+  platform: Adobe
 
 -
   name: AR PL New Sung
