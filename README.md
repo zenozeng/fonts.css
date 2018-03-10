@@ -25,11 +25,16 @@ npm install fonts.css --save
 </body>
 ```
 
-# Contribute
+# Contributors
 
-Fork 这个项目然后修改 fonts.yml。
-如果你要自己编译可以npm安装 coffee-script, js-yaml 然后运行 cake build。
-如果不的话，可以直接 pull request 回来，由我来编译。
+- @blackgear
+- @Bubblings
+- @DreaminginCodeZH
+- @fyears
+- @Hexcles
+- @xhacker
+- @YuzhongHuangCS
+- @yzyzsun
 
 # Known Issues
 
