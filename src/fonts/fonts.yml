@@ -81,14 +81,6 @@
     - Mac
 
 - 
-  name: 华文宋体
-  alias: STSong
-  genericFamilyName: 宋体
-  platform:
-    - Windows[MS Office]
-    - Mac
-
-- 
   name: 思源宋体
   alias:
     - Noto Serif CJK SC
@@ -96,6 +88,14 @@
     - Source Han Serif CN
   genericFamilyName: 宋体
   platform: Adobe
+
+- 
+  name: 华文宋体
+  alias: STSong
+  genericFamilyName: 宋体
+  platform:
+    - Windows[MS Office]
+    - Mac
 
 -
   name: AR PL New Sung

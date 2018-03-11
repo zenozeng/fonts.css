@@ -15,6 +15,11 @@
   platform: Mac
   note: "Use apple system font (like San Francisco) by default, see also: https://github.com/zenozeng/fonts.css/issues/29"
 
+- name: Noto Sans
+  alias:  Noto Sans
+  genericFamilyName: 黑体
+  platform: Linux
+
 - name: Helvetica Neue
   alias: Helvetica Neue
   genericFamilyName: 黑体

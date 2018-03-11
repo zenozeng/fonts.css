@@ -25,3 +25,8 @@
     margin-top: 1em;
     padding-top: 1em;
 }
+
+.card .font-list {
+    color: #333;
+    padding-bottom: .5em;
+}

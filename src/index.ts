@@ -14,15 +14,16 @@ const fonts = require('./fonts/fonts.yml') as Font[]
 const enFonts = require('./fonts/fonts.en.yml') as Font[]
 const cards = new Parser(fonts, enFonts).parse()
 
-const cssFontFamilies = ([] as string[]).concat(...cards.map((card) => card.cssFontFamilies))
+const cssFontFamilies = ([] as string[]).concat(...cards.map((card) => card.cssFontFamilies)).map((v) => v.replace(/"/g, ''))
 const fontAvailability : HashTable<boolean> = {};
-new FontDetect().detect(cssFontFamilies.map((v) => v.replace(/"/g, '')), (err: any, result: any) => {
+new FontDetect().detect(cssFontFamilies, (err: any, result: any) => {
     if (err) {
         throw err;
     }
     cssFontFamilies.forEach((val, i) => {
-        fontAvailability[val] = result[i];
-    })    
+        Vue.set(fontAvailability, val, result[i])
+    })
+    console.log(fontAvailability)
 })
 
 console.log(cards);

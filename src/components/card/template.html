@@ -5,16 +5,15 @@
     </ul>
     <ul class="preview">
         <template v-for="size of sizes">
-                <li :style="{ fontSize: size + 'px' }">{{ text }}</li>
+            <li :style="{ fontSize: size + 'px', fontFamily: fontFamily }">{{ text }}</li>
         </template>
     </ul>
-    <ul>
-        <li v-for="font of data.fonts">{{ font.name }}</li>
-    </ul>
-    <ul>
-        font-family:
-        <li v-for="font of data.cssFontFamilies">{{ font }}</li>
-    </ul>
+    <div class="font-list">
+        <template v-for="(font, index) in fonts"><span :style="{textDecoration: font.available ? 'underline' : 'none' }">{{ font.name }}</span><span v-if="index < fonts.length - 1">, </span></template>
+    </div>
+    <div>
+        font-family: <template v-for="(font, index) in data.cssFontFamilies"><span>{{ font }}</span><span v-if="index < data.cssFontFamilies.length - 1">, </span></template>;
+    </div>
     <ul class="notes">
         <li v-for="note of data.notes">> {{ note }}</li>
     </ul>
