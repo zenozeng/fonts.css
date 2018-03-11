@@ -1,17 +1,12 @@
 {
     "name": "fonts.css",
-    "version": "1.3.1",
+    "version": "2.0.0",
     "ignore": [
-        "bower.json",
-        "Cakefile",
-        "fonts.yml",
+        "dist/build.js",
+        "src",
         "index.html",
-        "README.md",
-        "styles.css",
-        "test",
-        "template",
-        "js",
-        "fonts.en.yml",
-        "package.json"
+        "tsconfig.json",
+        "tsconfig.vue.json",
+        "webpack.config.js"
     ]
 }
