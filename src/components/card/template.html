@@ -1,0 +1,18 @@
+<div>
+    <h2>{{ data.name }} <span>.{{ data.className }}</span></h2>
+    <ul>
+        <li v-for="platform of data.platforms">{{ platform }}</li>
+    </ul>
+    <ul>
+        <template v-for="size of sizes">
+                <li :style="{ fontSize: size + 'px' }"><span>{{ size }}px</span>{{ text }}</li>
+        </template>
+    </ul>
+    <ul>
+        <li v-for="font of data.fonts">{{ font.name }}</li>
+    </ul>
+    <ul>
+        font-family:
+        <li v-for="font of data.cssFontFamilies">{{ font }}</li>
+    </ul>
+</div>

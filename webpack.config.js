@@ -19,16 +19,20 @@ module.exports = {
         }
       },
       {
+        test: /\.(html)$/,
+        loader: 'raw-loader',
+      },
+      {
         test: /\.(png|jpg|gif|svg)$/,
         loader: 'file-loader',
         options: {
           name: '[name].[ext]?[hash]'
         }
-      }
+      },
     ]
   },
   resolve: {
-    extensions: ['.ts', '.js', '.json'],
+    extensions: ['.ts', '.js', '.json', '.html'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js'
     }

@@ -8,13 +8,14 @@ export interface Font {
     name: string
     alias: string[] | string
     genericFamilyName: string
-    platfrom: string[] | string
+    platform: string[] | string
     note: string[] | string
 }
 
 export interface ParseResult extends GenericFamily {
     fonts: Font[]
     cssFontFamilies: string[]
+    platforms: string[]
 }
 
 const genericFamilies: GenericFamily[] = [
@@ -40,6 +41,14 @@ const genericFamilies: GenericFamily[] = [
     },
 ]
 
+function flatten(strings: (string[] | string)[]) : string[] {
+    return ([] as string[]).concat(...strings)
+}
+
+function uniq(strings: string[]) {
+    return strings.filter((v, i, arr) => arr.indexOf(v) == i)
+}
+
 export class Parser {
 
     constructor(private fonts: Font[], private enFonts: Font[]) {}
@@ -49,9 +58,10 @@ export class Parser {
         const filter = (font: Font) => font.genericFamilyName == genericFamily.name
         result.fonts = this.enFonts.filter(filter)
         result.fonts = result.fonts.concat(this.fonts.filter(filter))
-        result.cssFontFamilies = ([] as string[]).concat(...result.fonts.map((font) => font.alias)) // type of font.alias is string[] | string, flatten here
+        result.cssFontFamilies = flatten(result.fonts.map((font) => font.alias))
         result.cssFontFamilies.push(genericFamily.fallbackGenericFamily)
         result.cssFontFamilies = result.cssFontFamilies.map((str) => str.indexOf(" ") > -1 || str.indexOf("\\") > -1 ? `"${str}"` : str)
+        result.platforms = uniq(flatten(this.fonts.map((font) => font.platform))) // based on Chinese fonts here
         return result
     }
 

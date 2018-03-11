@@ -1,13 +1,9 @@
-import Vue from "vue";
-
-// input: availableFonts
+import Vue from 'vue'
+import { ParseResult } from '../../parser'
 
 export default Vue.extend({
-    template: `
-        <div>
-        </div>
-    `,
-    props: ['name'],
+    template: require('./template.html'),
+    props: ['data', 'fontAvailability'],
     data() {
         return {
             sizes: [24, 18, 16, 14, 12],
@@ -17,8 +13,11 @@ export default Vue.extend({
     methods: {
     },
     computed: {
-        platforms() : string {
-            return ""
+        cardData() : ParseResult {
+            return this.data
+        },
+        platforms() : string[] {
+            return []
         },
     }
 });
