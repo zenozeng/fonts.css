@@ -30,3 +30,8 @@
     color: #333;
     padding-bottom: .5em;
 }
+
+.card .font-list .font {
+    cursor: pointer;    
+    transition: all .3s;
+}
