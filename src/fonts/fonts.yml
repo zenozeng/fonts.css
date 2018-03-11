@@ -29,7 +29,7 @@
     - Source Han Sans CN
   genericFamilyName: 黑体
   platform: Linux
-  note: 一些新的 Linux 发行版预装了该字体（Debian Stretch+ 提供了 fonts-noto-cjk 包，内含：Noto Sans CJK 以及 Noto Sans Mono CJK）
+  note: 一些新的 Linux 发行版预装了 Noto Sans CJK（Debian Stretch+ 提供了 fonts-noto-cjk 包，内含：Noto Sans CJK 以及 Noto Sans Mono CJK）
 
 - 
   name: 微软雅黑

@@ -9,12 +9,19 @@
 }
 
 .card .preview {
-    line-height: 2em;
     color: #000;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 1em 0;
+    margin: 1em 0;
 }
 
-.card .preview span {
-    display: inline-block;
-    width: 80px;
-    color: #777;
+.card .preview li {
+    line-height: 2em;
+}
+
+.notes {
+    border-top: 1px solid #ccc;
+    margin-top: 1em;
+    padding-top: 1em;
 }

@@ -16,6 +16,7 @@ export interface ParseResult extends GenericFamily {
     fonts: Font[]
     cssFontFamilies: string[]
     platforms: string[]
+    notes: string[]
 }
 
 const genericFamilies: GenericFamily[] = [
@@ -62,6 +63,7 @@ export class Parser {
         result.cssFontFamilies.push(genericFamily.fallbackGenericFamily)
         result.cssFontFamilies = result.cssFontFamilies.map((str) => str.indexOf(" ") > -1 || str.indexOf("\\") > -1 ? `"${str}"` : str)
         result.platforms = uniq(flatten(this.fonts.map((font) => font.platform))) // based on Chinese fonts here
+        result.notes = flatten(result.fonts.map((font) => font.note)).filter((note) => note)
         return result
     }
 

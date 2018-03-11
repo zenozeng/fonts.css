@@ -32,6 +32,7 @@ let v = new Vue({
     template: `
     <div>
         <h1>Fonts.css -- 跨平台中文字体解决方案</h1>
+        <h3><a href="https://github.com/zenozeng/fonts.css">github.com/zenozeng/fonts.css</a></h3>
         <card v-for="card in cards" :data="card" :fontAvailability="fontAvailability"></card>
         </template>
     </div>

@@ -3,9 +3,9 @@
     <ul>
         <li v-for="platform of data.platforms">{{ platform }}</li>
     </ul>
-    <ul>
+    <ul class="preview">
         <template v-for="size of sizes">
-                <li :style="{ fontSize: size + 'px' }" class="preview"><span>{{ size }}px</span>{{ text }}</li>
+                <li :style="{ fontSize: size + 'px' }">{{ text }}</li>
         </template>
     </ul>
     <ul>
@@ -14,5 +14,8 @@
     <ul>
         font-family:
         <li v-for="font of data.cssFontFamilies">{{ font }}</li>
+    </ul>
+    <ul class="notes">
+        <li v-for="note of data.notes">> {{ note }}</li>
     </ul>
 </div>

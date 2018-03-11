@@ -11,6 +11,9 @@ body {
     font-size:12px;
     padding: 2em;
 }
-h1 {
+h1, h3 {
     text-align: center;
+}
+a {
+    color: #555;
 }
