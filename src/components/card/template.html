@@ -1,11 +1,11 @@
-<div>
+<div class="card">
     <h2>{{ data.name }} <span>.{{ data.className }}</span></h2>
     <ul>
         <li v-for="platform of data.platforms">{{ platform }}</li>
     </ul>
     <ul>
         <template v-for="size of sizes">
-                <li :style="{ fontSize: size + 'px' }"><span>{{ size }}px</span>{{ text }}</li>
+                <li :style="{ fontSize: size + 'px' }" class="preview"><span>{{ size }}px</span>{{ text }}</li>
         </template>
     </ul>
     <ul>

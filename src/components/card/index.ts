@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import { ParseResult } from '../../parser'
+import './styles.css'
 
 export default Vue.extend({
     template: require('./template.html'),

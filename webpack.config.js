@@ -19,7 +19,7 @@ module.exports = {
         }
       },
       {
-        test: /\.(html)$/,
+        test: /\.html$/,
         loader: 'raw-loader',
       },
       {
@@ -29,10 +29,18 @@ module.exports = {
           name: '[name].[ext]?[hash]'
         }
       },
+      {
+        test: /\.yml$/,
+        loader: [ 'json-loader', 'yaml-loader' ]
+      },
+      {
+        test: /\.css$/,
+        loader: [ 'style-loader', 'css-loader' ]
+      }
     ]
   },
   resolve: {
-    extensions: ['.ts', '.js', '.json', '.html'],
+    extensions: ['.ts', '.js', '.json', '.html', '.yml', '.csss'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js'
     }

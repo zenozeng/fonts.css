@@ -1,6 +1,8 @@
 import Vue, { VueConstructor } from 'vue'
 import {Parser, Font} from './parser'
 import Card from './components/card'
+import './styles.css'
+
 console.log(Card)
 const FontDetect = require('font-detect')
 
@@ -8,8 +10,8 @@ interface HashTable<T> {
     [key: string]: T;
 }
 
-const fonts = require('json-loader!yaml-loader!./fonts/fonts.yml') as Font[]
-const enFonts = require('json-loader!yaml-loader!./fonts/fonts.en.yml') as Font[]
+const fonts = require('./fonts/fonts.yml') as Font[]
+const enFonts = require('./fonts/fonts.en.yml') as Font[]
 const cards = new Parser(fonts, enFonts).parse()
 
 const cssFontFamilies = ([] as string[]).concat(...cards.map((card) => card.cssFontFamilies))

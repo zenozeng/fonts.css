@@ -27,6 +27,7 @@
     "js-yaml": "^3.11.0",
     "json-loader": "^0.5.7",
     "raw-loader": "^0.5.1",
+    "style-loader": "^0.20.3",
     "ts-loader": "^4.0.1",
     "ts-node": "^5.0.1",
     "typescript": "^2.7.2",
