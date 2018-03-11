@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "noImplicitReturns": true,
+        "sourceMap": true,
+        "target": "es6",
+        "outDir": "./dist/",
+        "strict": true
+    }
+}

@@ -1,0 +1,48 @@
+.card {
+    background: #fff;
+    margin: 4em 0;
+    padding: 2em;
+}
+
+.card h2 span {
+    font-size: .6em;
+}
+
+.card .preview {
+    color: #000;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 1em 0;
+    margin: 1em 0;
+}
+
+.card .preview li {
+    line-height: 2em;
+}
+
+.notes {
+    border-top: 1px solid #ccc;
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
+.card .font-list {
+    color: #333;
+    padding-bottom: .5em;
+}
+
+.card .font-list .font {
+    cursor: pointer;    
+    transition: all .3s;
+}
+
+.card .platforms span {
+    display: inline-block;
+    padding-right: .5em;
+    padding-top: 1em;
+}
+
+.card .platforms span:hover {
+    cursor: pointer;
+    color: #DC143C;
+}

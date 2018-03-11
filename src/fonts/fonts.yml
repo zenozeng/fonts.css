@@ -1,6 +1,6 @@
 ---
 # Fonts.yml
-# Copyright (C) 2013-2015 Zeno Zeng and other contributors
+# Copyright (C) 2013-2018 Zeno Zeng and contributors
 # Lincensed under the MIT License
 
 # 字体的排序会按照在这个文件中的顺序排列
@@ -12,85 +12,61 @@
 -
   name: PingFang
   alias: PingFang SC
-  family: 黑体
+  genericFamilyName: 黑体
   platform: Mac
 
 - 
   name: 冬青黑
   alias: Hiragino Sans GB
-  family: 黑体
+  genericFamilyName: 黑体
   platform: Mac
-
-- 
-  name: Noto Sans CJK
-  alias:
-    - Noto Sans CJK SC
-  family: 黑体
-  platform: Linux
 
 - 
   name: 思源黑体
   alias:
+    - Noto Sans CJK SC
     - Source Han Sans SC
     - Source Han Sans CN
-  family: 黑体
-  platform: Adobe
+  genericFamilyName: 黑体
+  platform: Linux
+  note: 一些新的 Linux 发行版预装了 Noto Sans CJK（Debian Stretch+ 提供了 fonts-noto-cjk 包，内含：Noto Sans CJK 以及 Noto Sans Mono CJK）
 
 - 
   name: 微软雅黑
   alias: Microsoft YaHei
-  family: 黑体
+  genericFamilyName: 黑体
   platform: Windows
 
 -
   name: 文泉驿微米黑
   alias: Wenquanyi Micro Hei
-  family: 黑体
+  genericFamilyName: 黑体
   platform: Linux
-
-# 没有必要：一般有文泉驿等宽微米黑则有文泉驿微米黑
-# - 
-#   name: 文泉驿等宽微米黑
-#   alias: WenQuanYi Micro Hei Mono
-#   family: 黑体
-#   platform: Linux
+  note: 文泉驿等宽微米黑未加入此列表，因为预装该字体的发行版一般都有文泉驿微米黑
 
 - 
   name: 文泉驿正黑
   alias: WenQuanYi Zen Hei
-  family: 黑体
+  genericFamilyName: 黑体
   platform: Linux
-
-# 没有必要：一般有文泉驿等宽正黑则必有文泉驿正黑
-# - 
-#   name: 文泉驿等宽正黑
-#   alias: WenQuanYi Zen Hei
-#   family: 黑体
-#   platform: Linux
-
-# 低版本的 Mac 也已经有了华文黑体
-# - 
-#   name: 苹果丽中黑
-#   alias: Apple LiGothic Medium
-#   family: 黑体
-#   platform: Mac
 
 - 
   name: 华文黑体
   alias: ST Heiti
-  family: 黑体
+  genericFamilyName: 黑体
   platform: Mac
+  note: 苹果丽中黑未加入此列表，因为低版本的 Mac 也有了华文黑体
 
 - 
   name: 中易黑体
   alias: SimHei
-  family: 黑体
+  genericFamilyName: 黑体
   platform: Windows
 
 -
   name: 文泉驿点阵正黑
   alias: WenQuanYi Zen Hei Sharp
-  family: 黑体
+  genericFamilyName: 黑体
   platform: Linux
 
 ###########################
@@ -100,68 +76,62 @@
 - 
   name: Songti SC
   alias: Songti SC
-  family: 宋体
+  genericFamilyName: 宋体
   platform:
     - Mac
-
-- 
-  name: 华文宋体
-  alias: STSong
-  family: 宋体
-  platform:
-    - Windows[MS Office]
-    - Mac
- 
- - 
-  name: Noto Serif CJK
-  alias:
-    - Noto Serif CJK SC
-  family: 宋体
-  platform: Linux
 
 - 
   name: 思源宋体
   alias:
+    - Noto Serif CJK SC
     - Source Han Serif SC
     - Source Han Serif CN
-  family: 宋体
+  genericFamilyName: 宋体
   platform: Adobe
+
+- 
+  name: 华文宋体
+  alias: STSong
+  genericFamilyName: 宋体
+  platform:
+    - Windows
+    - Mac
 
 -
   name: AR PL New Sung
   alias: AR PL New Sung
-  family: 宋体
+  genericFamilyName: 宋体
   platform:
     - Linux
 
 -
   name: 文鼎ＰＬ简报宋
   alias: AR PL SungtiL GB
-  family: 宋体
+  genericFamilyName: 宋体
   platform: AR PL
     
 - 
   name: 新宋体
   alias: NSimSun
-  family: 宋体
+  genericFamilyName: 宋体
   platform: Windows
 
 - 
   name: 中易宋体
   alias: SimSun
-  family: 宋体
+  genericFamilyName: 宋体
   platform: Windows
 
 - 
   name: 全字库正宋体
   alias: TW\-Sung
-  family: 宋体
+  genericFamilyName: 宋体
   platform: 全字库
 
 - 
   name: 文泉驿点阵宋
   alias: WenQuanYi Bitmap Song
-  family: 宋体
+  genericFamilyName: 宋体
   platform: Linux
 
 - 
@@ -171,7 +141,7 @@
     - AR PL UMing HK
     - AR PL UMing TW
     - AR PL UMing TW MBE
-  family: 宋体
+  genericFamilyName: 宋体
   platform: Linux
 
 ###########################
@@ -181,16 +151,16 @@
 - 
   name: Kaiti SC
   alias: Kaiti SC
-  family: 楷体
+  genericFamilyName: 楷体
   platform:
     - Mac
 
 -
   name: 华文楷体
   alias: STKaiti
-  family: 楷体
+  genericFamilyName: 楷体
   platform:
-    - Windows[MS Office]
+    - Windows
     - Mac
 
 -
@@ -200,13 +170,13 @@
     - AR PL UKai HK
     - AR PL UKai TW
     - AR PL UKai TW MBE
-  family: 楷体
+  genericFamilyName: 楷体
   platform: Linux
 
 -
   name: 文鼎ＰＬ简中楷
   alias: AR PL KaitiM GB
-  family: 楷体
+  genericFamilyName: 楷体
   platform: AR PL
 
 -
@@ -214,19 +184,19 @@
   alias:
     - KaiTi
     - KaiTi_GB2312
-  family: 楷体
+  genericFamilyName: 楷体
   platform: Windows
 
 -
   name: 標楷體
   alias: DFKai-SB
-  family: 楷体
+  genericFamilyName: 楷体
   platform: Windows
 
 -
   name: 全字库正楷体
   alias: TW\-Kai
-  family: 楷体
+  genericFamilyName: 楷体
   platform: 全字库
 
 
@@ -237,9 +207,9 @@
 - 
   name: 华文仿宋
   alias: STFangsong
-  family: 仿宋
+  genericFamilyName: 仿宋
   platform:
-    - Windows[MS Office]
+    - Windows
     - Mac
 
 - 
@@ -247,7 +217,7 @@
   alias:
     - FangSong
     - FangSong_GB2312
-  family: 仿宋
+  genericFamilyName: 仿宋
   platform:
     - Windows
     - Mac
@@ -255,7 +225,7 @@
 -
   name: CWTEX仿宋体
   alias: CWTEX\-F
-  family: 仿宋
+  genericFamilyName: 仿宋
   platform:
     - CWTEX
   note: CWTEX仿宋体是繁体字型
@@ -267,7 +237,7 @@
 -
   name: 新细明体
   alias: PMingLiU
-  family: 宋体
+  genericFamilyName: 宋体
   platform:
     - Windows
     - Mac
@@ -275,7 +245,7 @@
 -
   name: 细明体
   alias: MingLiU
-  family: 宋体
+  genericFamilyName: 宋体
   platform:
     - Windows
     - Mac

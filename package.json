@@ -1,10 +1,10 @@
 {
   "name": "fonts.css",
-  "version": "1.5.0",
+  "version": "2.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "cake build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "ts-node src/build.ts && webpack --mode production",
+    "start:dev": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -19,8 +19,22 @@
     "url": "https://github.com/zenozeng/fonts.css/issues"
   },
   "devDependencies": {
-    "coffee-script": "^1.11.1",
-    "js-yaml": "^3.6.1",
-    "lodash": "^4.16.4"
+    "@types/js-yaml": "^3.10.1",
+    "@types/node": "^9.4.7",
+    "css-loader": "^0.28.10",
+    "file-loader": "^1.1.11",
+    "font-detect": "^1.0.0",
+    "js-yaml": "^3.11.0",
+    "json-loader": "^0.5.7",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.20.3",
+    "ts-loader": "^4.0.1",
+    "ts-node": "^5.0.1",
+    "typescript": "^2.7.2",
+    "vue": "^2.5.14",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.11",
+    "webpack-dev-server": "^3.1.1",
+    "yaml-loader": "^0.5.0"
   }
 }
