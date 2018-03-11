@@ -62,7 +62,7 @@ export class Parser {
         result.cssFontFamilies = flatten(result.fonts.map((font) => font.alias))
         result.cssFontFamilies.push(genericFamily.fallbackGenericFamily)
         result.cssFontFamilies = result.cssFontFamilies.map((str) => str.indexOf(" ") > -1 || str.indexOf("\\") > -1 ? `"${str}"` : str)
-        result.platforms = uniq(flatten(this.fonts.map((font) => font.platform))) // based on Chinese fonts here
+        result.platforms = uniq(flatten(this.fonts.filter(filter).map((font) => font.platform))) // based on Chinese fonts here
         result.notes = flatten(result.fonts.map((font) => font.note)).filter((note) => note)
         return result
     }

@@ -62,8 +62,5 @@ export default Vue.extend({
         notes(): string[] {
             return ["下划线标注的为检测到的可用字体，检测方法参见：github.com/zenozeng/font-detect.js"].concat(this.data.notes)
         }
-    },
-    mounted() {
-        console.log(this.fonts)
     }
 });

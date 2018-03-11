@@ -3,7 +3,6 @@ import {Parser, Font} from './parser'
 import Card from './components/card'
 import './styles.css'
 
-console.log(Card)
 const FontDetect = require('font-detect')
 
 interface HashTable<T> {
@@ -23,10 +22,7 @@ new FontDetect().detect(cssFontFamilies, (err: any, result: any) => {
     cssFontFamilies.forEach((val, i) => {
         Vue.set(fontAvailability, val, result[i])
     })
-    console.log(fontAvailability)
 })
-
-console.log(cards);
 
 let v = new Vue({
     el: '#app',

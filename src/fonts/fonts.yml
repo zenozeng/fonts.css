@@ -94,7 +94,7 @@
   alias: STSong
   genericFamilyName: 宋体
   platform:
-    - Windows[MS Office]
+    - Windows
     - Mac
 
 -
@@ -160,7 +160,7 @@
   alias: STKaiti
   genericFamilyName: 楷体
   platform:
-    - Windows[MS Office]
+    - Windows
     - Mac
 
 -
@@ -209,7 +209,7 @@
   alias: STFangsong
   genericFamilyName: 仿宋
   platform:
-    - Windows[MS Office]
+    - Windows
     - Mac
 
 - 

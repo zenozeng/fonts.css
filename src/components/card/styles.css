@@ -35,3 +35,14 @@
     cursor: pointer;    
     transition: all .3s;
 }
+
+.card .platforms span {
+    display: inline-block;
+    padding-right: .5em;
+    padding-top: 1em;
+}
+
+.card .platforms span:hover {
+    cursor: pointer;
+    color: #DC143C;
+}
