@@ -4,7 +4,7 @@
 
 ## Demo & Doc
 
-http://zenozeng.github.io/fonts.css/
+https://zenozeng.github.io/fonts.css/
 
 ## NPM
 
