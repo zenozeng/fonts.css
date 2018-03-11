@@ -36,6 +36,6 @@ function styl(result: ParseResult) {
     const results = new Parser(fonts, enFonts).parse()
     const writeFile = promisify(fs.writeFile);
     for (let fn of [css, less, scss, styl]) {
-        await writeFile("fonts." + fn.name, results.map(fn).join("\n"))
+        await writeFile("dist/fonts." + fn.name, results.map(fn).join("\n"))
     }
 })()

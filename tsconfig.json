@@ -4,9 +4,6 @@
         "sourceMap": true,
         "target": "es6",
         "outDir": "./dist/",
-        "strict": true,
-    },
-    "include": [
-        "./src/**/*"
-    ]
+        "strict": true
+    }
 }

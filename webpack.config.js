@@ -15,7 +15,7 @@ module.exports = {
         loader: 'ts-loader',
         exclude: /node_modules/,
         options: {
-            configFile: "./tsconfig.vue.json"
+            configFile: path.resolve(__dirname, "./tsconfig.vue.json")
         }
       },
       {
@@ -35,7 +35,7 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
-    noInfo: true
+    port: 9000,
   },
   performance: {
     hints: false
@@ -50,12 +50,6 @@ if (process.env.NODE_ENV === 'production') {
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: '"production"'
-      }
-    }),
-    new webpack.optimize.UglifyJsPlugin({
-      sourceMap: true,
-      compress: {
-        warnings: false
       }
     }),
     new webpack.LoaderOptionsPlugin({

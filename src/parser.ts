@@ -45,9 +45,8 @@ export class Parser {
     constructor(private fonts: Font[], private enFonts: Font[]) {}
 
     parseGenericFamily(genericFamily: GenericFamily) : ParseResult {
-        let result = {} as ParseResult
-        Object.assign(result, genericFamily)
-        const filter = (font: Font) => font.genericFamilyName == genericFamily.name 
+        let result = JSON.parse(JSON.stringify(genericFamily)) as ParseResult
+        const filter = (font: Font) => font.genericFamilyName == genericFamily.name
         result.fonts = this.enFonts.filter(filter)
         result.fonts = result.fonts.concat(this.fonts.filter(filter))
         result.cssFontFamilies = ([] as string[]).concat(...result.fonts.map((font) => font.alias)) // type of font.alias is string[] | string, flatten here
