@@ -34,7 +34,7 @@
     "vue": "^2.5.14",
     "webpack": "^4.1.1",
     "webpack-cli": "^5.0.1",
-    "webpack-dev-server": "^3.1.1",
+    "webpack-dev-server": "^3.11.3",
     "yaml-loader": "^0.5.0"
   }
 }
