@@ -21,7 +21,7 @@
   "devDependencies": {
     "@types/js-yaml": "^3.10.1",
     "@types/node": "^9.4.7",
-    "css-loader": "^0.28.10",
+    "css-loader": "^6.7.2",
     "file-loader": "^1.1.11",
     "font-detect": "^1.0.0",
     "js-yaml": "^3.11.0",
